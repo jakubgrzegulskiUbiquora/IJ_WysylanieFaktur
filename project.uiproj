@@ -1,0 +1,6 @@
+{
+  "Name": "IJ_WysylanieFaktur",
+  "ProjectType": "Process",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}
