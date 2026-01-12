@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Szukane słowo lub numer",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "s58iJB9jokuSk1RU3v5Z4w",
+  "Reference": "tUWEamSLTkOWm2KMa3igsg/s58iJB9jokuSk1RU3v5Z4w",
+  "ParentRef": "tUWEamSLTkOWm2KMa3igsg/arlgBJ0jaUmic-UuRTrNHA",
+  "Created": "2026-01-12T10:37:50.8800338Z",
+  "Updated": "2026-01-12T10:37:50.8800338Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

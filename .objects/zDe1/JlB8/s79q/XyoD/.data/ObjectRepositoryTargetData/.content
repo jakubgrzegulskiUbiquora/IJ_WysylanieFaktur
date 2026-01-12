@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SbfFPXxoOkiUxeix162L-g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="6b13bcb4-1c0b-4642-b58b-87a04ada7111" CvTextArea="239, 299, 88, 12" CvTextArgument="113246/01/2026" CvType="Text" DesignTimeRectangle="240, 298, 86, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='      numer ▼   ' /&gt;" Guid="7a21fc0c-a9dc-49f7-82f5-20d31ca90490" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="a4ad9ead10441916670b6e29deaada98.png" xmlns="">0VekMCb0QmUa5RJllmLI9Gg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

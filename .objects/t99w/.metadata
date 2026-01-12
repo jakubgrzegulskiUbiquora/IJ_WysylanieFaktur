@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Fakturownia.pl - program do fakturowania",
+  "Type": "App",
+  "Id": "t99wmBg-L0-Mu4H4YRmn8g",
+  "Reference": "tUWEamSLTkOWm2KMa3igsg/t99wmBg-L0-Mu4H4YRmn8g",
+  "Created": "2026-01-12T10:37:50.3466461Z",
+  "Updated": "2026-01-12T10:37:50.3466461Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

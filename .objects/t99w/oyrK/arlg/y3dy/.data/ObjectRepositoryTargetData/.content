@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XYMLtcOYeEynzDvaKfnViQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="c3e676c6-3e80-4faf-9af9-bfb9aadf0656" CvElementArea="30, 259, 147, 32" CvType="InputBox" DesignTimeRectangle="155, 267, 13, 14" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='search_more_div' tag='I' /&gt;" Guid="11bab153-cfeb-45a9-a348-4297230391e6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c3e676c6-3e80-4faf-9af9-bfb9aadf0656" CvElementArea="30, 259, 147, 32" CvType="InputBox" DesignTimeRectangle="31, 260, 144, 30" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='search-query' tag='INPUT' /&gt;" Guid="ac202aa9-dd44-4680-8bba-33c38e436eed" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="271596a54e43ef401e4aebe691b236cb.png" xmlns="">0XYpkW5ZMU0uq8hAzGxs4Ig</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
