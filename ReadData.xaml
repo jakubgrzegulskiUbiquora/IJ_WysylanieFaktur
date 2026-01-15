@@ -117,13 +117,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="727,1163" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="727,1305" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Read data" sap:VirtualizedContainerService.HintSize="486,1140" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <Sequence DisplayName="Read data" sap:VirtualizedContainerService.HintSize="486,1282" sap2010:WorkflowViewState.IdRef="Sequence_15">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtDaneDoFaktur" />
         <Variable x:TypeArguments="x:String" Default="PLACÓWKI ROZLICZENIE" Name="strSheetName" />
@@ -167,19 +167,24 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each currentDataRow" sap:VirtualizedContainerService.HintSize="452,775" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtDaneDoFaktur.AsEnumerable]">
+      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="For Each currentDataRow" sap:VirtualizedContainerService.HintSize="452,917" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtDaneDoFaktur.AsEnumerable]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="currentDataRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,644" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,786" sap2010:WorkflowViewState.IdRef="Sequence_16">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Default="[&quot;\d[\d| |-]{7,13}\d&quot;]" Name="strNIPRegex" />
                 <Variable x:TypeArguments="x:String" Default="KWOTA DO FAKTURY" Name="strColumnKwota" />
                 <Variable x:TypeArguments="x:String" Name="strNIP" />
                 <Variable x:TypeArguments="x:String" Name="strKwota" />
                 <Variable x:TypeArguments="x:String" Name="strData" />
+                <Variable x:TypeArguments="x:String" Name="strNumerFaktury">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:String">NUMER FAKTURY</Literal>
+                  </Variable.Default>
+                </Variable>
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -200,7 +205,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log Data" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[strData]">
+              <ui:LogMessage DisplayName="Log Data" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[strData]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -208,7 +213,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <Assign sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strNIP]</OutArgument>
                 </Assign.To>
@@ -222,7 +227,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log NIP" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;NIP: &quot;+strNIP]">
+              <ui:LogMessage DisplayName="Log NIP" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;NIP: &quot;+strNIP]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -244,7 +249,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log Kwota" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Kwota do Faktury: &quot;+strKwota]">
+              <ui:LogMessage DisplayName="Log Kwota" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Kwota do Faktury: &quot;+strKwota]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -252,10 +257,33 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="IpponJudo" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="IJ_Faktury">
+              <Assign sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[strNumerFaktury]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentDataRow(strNumerFaktury).ToString, "\d+").ToString+Today.ToString("/MM/yyyy")]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Numer Faktury" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Numer Faktury: &quot;+strNumerFaktury]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="IpponJudo" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="IJ_Faktury" Reference="[strNumerFaktury]">
                 <ui:AddQueueItem.ItemInformation>
                   <InArgument x:TypeArguments="x:String" x:Key="NIP">[strNIP]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="Kwota">[strKwota]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="NumerFaktury">[strNumerFaktury]</InArgument>
                 </ui:AddQueueItem.ItemInformation>
               </ui:AddQueueItem>
             </Sequence>
