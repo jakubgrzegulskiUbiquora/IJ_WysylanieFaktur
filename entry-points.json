@@ -4,12 +4,25 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "6be36d29-18b1-4920-a81c-3c6168d5c656",
-      "type": "process"
-    },
-    {
-      "filePath": "Main2.xaml",
-      "uniqueId": "b04b778a-0c0d-49d8-9bcf-e49b4116e816",
-      "type": "process"
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "DataWystawieniaFaktur": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "WskazPlikZrodlowy": {
+            "type": "string"
+          },
+          "TerminPlatnosci": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "WskazPlikZrodlowy"
+        ]
+      }
     }
   ]
 }
