@@ -4,19 +4,7 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "6be36d29-18b1-4920-a81c-3c6168d5c656",
-      "type": "process",
-      "input": {
-        "type": "object",
-        "properties": {
-          "in_OrchestratorQueueName": {
-            "type": "string"
-          },
-          "in_OrchestratorQueueFolder": {
-            "type": "string"
-          }
-        },
-        "required": []
-      }
+      "type": "process"
     },
     {
       "filePath": "Main2.xaml",
