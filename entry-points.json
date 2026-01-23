@@ -10,13 +10,15 @@
         "properties": {
           "DataWystawieniaFaktur": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "description": "Domyslnie ustawione na: DZISIAJ"
           },
           "WskazPlikZrodlowy": {
             "type": "string"
           },
           "TerminPlatnosci": {
-            "type": "string"
+            "type": "string",
+            "description": "Domyslnie ustawione na: 14 dni"
           }
         },
         "required": [
