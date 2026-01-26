@@ -125,33 +125,38 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="727,1672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="727,2870" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="[&quot;\d[\d| |-]{7,13}\d&quot;]" Name="strNIPRegex" />
-      <Variable x:TypeArguments="x:String" Default="KWOTA DO FAKTURY" Name="strColumnKwota" />
-      <Variable x:TypeArguments="x:String" Default="NUMER FAKTURY" Name="strColumnNumerFaktury" />
+      <Variable x:TypeArguments="x:String" Name="strNIPRegex" />
+      <Variable x:TypeArguments="x:String" Name="strColumnKwota" />
+      <Variable x:TypeArguments="x:String" Name="strColumnNumerFaktury" />
+      <Variable x:TypeArguments="x:String" Name="strColumnIlosc" />
+      <Variable x:TypeArguments="x:String" Name="strIlosc" />
+      <Variable x:TypeArguments="x:String" Name="strColumnNazwaUslugi" />
+      <Variable x:TypeArguments="x:String" Name="strColumnKontakt" />
+      <Variable x:TypeArguments="x:String" Name="strColumnIloscOsob" />
+      <Variable x:TypeArguments="x:String" Name="strColumnIloscGrup" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Read data" sap:VirtualizedContainerService.HintSize="549,1649" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <Sequence DisplayName="Read data" sap:VirtualizedContainerService.HintSize="549,2847" sap2010:WorkflowViewState.IdRef="Sequence_15">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtDaneDoFaktur" />
-        <Variable x:TypeArguments="x:String" Default="PLACÓWKI ROZLICZENIE" Name="strSheetName" />
-        <Variable x:TypeArguments="x:String" Default="I:N" Name="strRange" />
-        <Variable x:TypeArguments="x:String" Default="C:\Users\Administrator\Downloads\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx" Name="strWorkbookAddress" />
-        <Variable x:TypeArguments="x:String" Default="DANE DO FAKTURY" Name="strColumnData" />
+        <Variable x:TypeArguments="x:String" Name="strSheetName" />
+        <Variable x:TypeArguments="x:String" Name="strRange" />
+        <Variable x:TypeArguments="x:String" Name="strColumnData" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="515,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="515,459" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
-          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
               <ui:AssignOperation.To>
                 <OutArgument x:TypeArguments="x:String">[strSheetName]</OutArgument>
@@ -200,19 +205,59 @@
                 <InArgument x:TypeArguments="x:String">[in_Config("ColumnNumerFaktury").ToString]</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strColumnNazwaUslugi]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[in_Config("ColumnNazwaUslugi").ToString]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strColumnKontakt]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[in_Config("ColumnKontakt").ToString]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strColumnIlosc]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[in_Config("ColumnIlosc").ToString]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_19">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strColumnIloscOsob]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[in_Config("ColumnIloscOsob").ToString]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_20">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strColumnIloscGrup]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">[in_Config("ColumnIloscGrup").ToString]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:MultipleAssign>
-      <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtDaneDoFaktur]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="515,57" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="[strRange]" SheetName="[strSheetName]" WorkbookPath="[strWorkbookAddress]">
+      <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtDaneDoFaktur]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="515,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="[strRange]" SheetName="[strSheetName]" WorkbookPath="[in_strWorkbookAddress]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
@@ -239,41 +284,39 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:FilterDataTable>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="515,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[dtDaneDoFaktur.RowCount.ToString+&quot; rows&quot;]">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="515,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[dtDaneDoFaktur.RowCount.ToString+&quot; rows&quot;]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Assign data and add to queue" sap:VirtualizedContainerService.HintSize="515,1338" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtDaneDoFaktur.AsEnumerable]">
+      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Assign data and add to queue" sap:VirtualizedContainerService.HintSize="515,1953" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtDaneDoFaktur.AsEnumerable]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="currentDataRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,1216" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,1831" sap2010:WorkflowViewState.IdRef="Sequence_16">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strNIP" />
                 <Variable x:TypeArguments="x:String" Name="strKwota" />
                 <Variable x:TypeArguments="x:String" Name="strDane" />
                 <Variable x:TypeArguments="x:String" Name="strNumerFaktury" />
-                <Variable x:TypeArguments="x:String" Name="strKontakt" />
-                <Variable x:TypeArguments="x:String" Name="strColumnKontakt">
-                  <Variable.Default>
-                    <Literal x:TypeArguments="x:String">jakub.grzegulski@ubiquora.com</Literal>
-                  </Variable.Default>
-                </Variable>
+                <Variable x:TypeArguments="x:String" Default="jakub.grzegulski@ubiquora.com" Name="strKontakt" />
+                <Variable x:TypeArguments="x:String" Name="strNazwaUslugi" />
+                <Variable x:TypeArguments="x:String" Name="strIloscOsob" />
+                <Variable x:TypeArguments="x:String" Name="strIloscGrup" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,401" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                 <ui:MultipleAssign.AssignOperations>
-                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                     <ui:AssignOperation sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="AssignOperation_8">
                       <ui:AssignOperation.To>
                         <OutArgument x:TypeArguments="x:String">[strDane]</OutArgument>
@@ -298,14 +341,6 @@
                         <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnKwota).ToString]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
-                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
-                      <ui:AssignOperation.To>
-                        <OutArgument x:TypeArguments="x:String">[strNumerFaktury]</OutArgument>
-                      </ui:AssignOperation.To>
-                      <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentDataRow(strColumnNumerFaktury).ToString, "\d+").ToString+Today.ToString("/MM/yyyy")]</InArgument>
-                      </ui:AssignOperation.Value>
-                    </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
                       <ui:AssignOperation.To>
                         <OutArgument x:TypeArguments="x:String">[strKontakt]</OutArgument>
@@ -314,10 +349,84 @@
                         <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnKontakt).ToString]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[strNazwaUslugi]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnNazwaUslugi).ToString]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_18">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[strNumerFaktury]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnNumerFaktury).ToString]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[strIlosc]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnIlosc).ToString]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_21">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[strIloscOsob]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnIloscOsob).ToString]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
+                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_22">
+                      <ui:AssignOperation.To>
+                        <OutArgument x:TypeArguments="x:String">[strIloscGrup]</OutArgument>
+                      </ui:AssignOperation.To>
+                      <ui:AssignOperation.Value>
+                        <InArgument x:TypeArguments="x:String">[currentDataRow(strColumnIloscGrup).ToString]</InArgument>
+                      </ui:AssignOperation.Value>
+                    </ui:AssignOperation>
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <ui:LogMessage DisplayName="Log Data" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[strDane]">
+              <If Condition="[strNumerFaktury.Length&lt;10]" DisplayName="Numer Faktury" sap:VirtualizedContainerService.HintSize="479,471" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[strNumerFaktury]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(currentDataRow(strColumnNumerFaktury).ToString, in_Config("NumerRegex").ToString).ToString+Today.ToString("/MM/yyyy")+in_Config("Suffix").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ui:LogMessage DisplayName="Log Data" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[strDane]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -333,7 +442,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <ui:LogMessage DisplayName="Log Kwota" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Kwota do Faktury: &quot;+strKwota]">
+              <ui:LogMessage DisplayName="Log Kwota" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Kwota do Faktury: &quot;+strKwota]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -341,7 +450,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <ui:LogMessage DisplayName="Log Numer Faktury" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Numer Faktury: &quot;+strNumerFaktury]">
+              <ui:LogMessage DisplayName="Log Numer Faktury" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Numer Faktury: &quot;+strNumerFaktury]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -357,9 +466,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <TryCatch DisplayName="Try Add item to queue" sap:VirtualizedContainerService.HintSize="479,586" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Add item to queue" sap:VirtualizedContainerService.HintSize="479,590" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
-                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,294" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,298" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strNazwa" />
                     </Sequence.Variables>
@@ -377,6 +486,10 @@
                         <InArgument x:TypeArguments="x:String" x:Key="DataWystawienia">[in_strDataWystawieniaFaktur]</InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="Nazwa">[strNazwa]</InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="TerminPlatnosci">[in_strTerminPlatnosci]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="NazwaUslugi">[strNazwaUslugi]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="Ilosc">[strIlosc]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="IloscOsob">[strIloscOsob]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="IloscGrup">[strIloscGrup]</InArgument>
                       </ui:AddQueueItem.ItemInformation>
                     </ui:AddQueueItem>
                   </Sequence>

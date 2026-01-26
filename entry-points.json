@@ -4,27 +4,7 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "6be36d29-18b1-4920-a81c-3c6168d5c656",
-      "type": "process",
-      "input": {
-        "type": "object",
-        "properties": {
-          "DataWystawieniaFaktur": {
-            "type": "string",
-            "format": "date-time",
-            "description": "Domyslnie ustawione na: DZISIAJ"
-          },
-          "WskazPlikZrodlowy": {
-            "type": "string"
-          },
-          "TerminPlatnosci": {
-            "type": "string",
-            "description": "Domyslnie ustawione na: 14 dni"
-          }
-        },
-        "required": [
-          "WskazPlikZrodlowy"
-        ]
-      }
+      "type": "process"
     }
   ]
 }

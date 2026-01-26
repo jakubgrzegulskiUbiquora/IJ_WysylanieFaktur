@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hyjgjdG9g0unuZ-eJMR3kw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/455576646/edit" CVScreenId="f199a115-3434-46d4-94a1-edaa61840be7" DesignTimeRectangle="689, 437, 87, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='invoice[positions_attributes][0][quantity]' tag='INPUT' type='text' /&gt;" Guid="01228e52-9f6a-4ad4-af81-4e7457b3d143" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="7352dd96713b0531e2bbf9c5d29861e2.png" xmlns="">0Eh8ewvDPVkqMzvUuLaXeiw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
