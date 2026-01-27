@@ -2,7 +2,7 @@
   "name": "IJ_WysylanieFaktur",
   "projectId": "106b9a1f-dd7e-4cda-af06-7d419781bb18",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "2_WystawianieFaktur.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.3.1]",
     "UiPath.MicrosoftOffice365.Activities": "[3.5.10]",
@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.182.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -55,8 +55,20 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "6be36d29-18b1-4920-a81c-3c6168d5c656",
+      "filePath": "1_WyborPlikuZFakturami.xaml",
+      "uniqueId": "e09dfc51-7278-415f-8635-b3888e68dbd3",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "2_WystawianieFaktur.xaml",
+      "uniqueId": "e5c0c934-c59a-40aa-8028-14de4c904c23",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "3_Wyslka.xaml",
+      "uniqueId": "97e2abe9-e66f-4222-83a1-bd9d3912b5c6",
       "input": [],
       "output": []
     }
