@@ -294,10 +294,13 @@
                           <InArgument x:TypeArguments="ui:BusinessRuleException">[Nothing]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Process workflow" sap:VirtualizedContainerService.HintSize="452,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_24" UnSafe="False" WorkflowFileName="Framework\Process_Wysylka.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Edge_Fakturownia_Wysylka - Invoke Workflow File (Components\Edge_Fakturownia_Wysylka.xaml)" sap:VirtualizedContainerService.HintSize="452,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="Components\Edge_Fakturownia_Wysylka.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strURL">[Config("URL").ToString]</InArgument>
                           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_strURL">[Config("URL").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strNumer">[TransactionItem.SpecificContent("NumerFaktury").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strEmail">[TransactionItem.SpecificContent("Kontakt").ToString]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
                       <TryCatch DisplayName="Try Catch Set Transaction Status (Success)" sap:VirtualizedContainerService.HintSize="452,52" sap2010:WorkflowViewState.IdRef="TryCatch_10">
