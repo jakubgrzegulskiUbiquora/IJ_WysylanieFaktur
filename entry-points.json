@@ -8,10 +8,6 @@
       "input": {
         "type": "object",
         "properties": {
-          "WskazPlikZrodlowy": {
-            "type": "string",
-            "description": "WYMAGANE"
-          },
           "TerminPlatnosci": {
             "type": "string",
             "description": "Domyslnie ustawione na: 14 dni"
@@ -23,7 +19,6 @@
           }
         },
         "required": [
-          "WskazPlikZrodlowy",
           "TerminPlatnosci",
           "DataWystawieniaFaktur"
         ]

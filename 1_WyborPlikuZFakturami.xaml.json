@@ -6,18 +6,6 @@
   "OriginalIconFileName": null,
   "Arguments": [
     {
-      "Name": "WskazPlikZrodlowy",
-      "DisplayName": "WskazPlikZrodlowy",
-      "Category": null,
-      "Tooltip": "WYMAGANE",
-      "Placeholder": "C:\\Users\\Administrator\\Downloads\\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx",
-      "Widget": null,
-      "IsRequired": true,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "TerminPlatnosci",
       "DisplayName": "TerminPlatnosci",
       "Category": null,

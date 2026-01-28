@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="3GtEjNit1EWDW12iQPXOrw" Reference="tUWEamSLTkOWm2KMa3igsg/G3wElOjxvEiKRSlu2180Kw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="yveAfItqXkm_7JDAmU3ujQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAC4iAAAuIgGq4t2SAAADu0lEQVRYR+2Xy28bVRTG/fcgBAKxrMqODXtYQCUWfUBJ2VDUxC5SnVZRm8ghEJra6cw4grSBikeVLkqDPUlL7JSgEDtNouaB49Txa962x/Z4Xh+64zhN3KRFOCiq6JE+aebc89356Y7u3Dkul8vl8njOutxuzwc+X+9EIDDI+h0F2MCm6veDrN//ZC7QyPm35bZqGrmGb5Dt6elh29s73u7ocJNH18Pr7SQQ3mg0iqKiQE5noIgisryEvCBB4XnImQxkScYGJ4IXZSj5vCOB5PIiJEmGnM06tTlBcrxkDjmdhiJKyPASeElBKBTCmTPtx9xuz2OAzs7zLo/nc28sPgf74TKqX/SjkuPRdy+FuwkF5lgI+vAIHgkqzt1JYIVToY/cgDl+FxMJBd3j6yjxMrT+ARhz8xiayWF0UYT15yy0/iso8jIuja9jOlXCVDRCAI7uAnDWG4vFAE2DLUqwTAtcSUdFt2AXi440w0K+VINhWrAlGahUUNRMiGUdtmHA5gXYtRqkigG1ZgKq6tSReuKrWcDk5LMA/uN4vgHIUv6VlbG4LjxVC+sCUnwRtt08Q4sAK2kJb7m/w+ttQbz2MbOnXvmIxnuXRlEoa81TtAYwl+Dw6kkah04P48JIBBdvTO0qMvZN+AE03WyeokWAtTrAkZ5bqNaM5uF/FPsC8H736AuA/zkA2WKlqg7LsnfIdGTB3u0DsBktA5B9/sapIRz78jbaBsbwyZVfHZ0aGMPJr+/gxFe/4Pr4QrN1K1oHaGPw0vGrOHx6GG9+dg2Ht4ncH/r0W/T+NN1s3YqWAcgreKfrJpJ5BTlJRXYXqVW92boV+wJwpPvFh+iAAcg2rBwkwMGtQILDyx9SzgocCMBaTsG7XTdx/nrE+Tv6N9ESgGXbkFUNZW3vff6saAlgP+I5ASDv17Zh2WTZ4VzDrP/fmZt5WJYjcklOQef8c3INn/3Y1/A8HWCzNVtegXY5gCon4nJkA5FkAWaYhf79D0iJZXSFkkjwZRg//gxrMorfkgWnhVMFBZr/Koz5RVyLcbi9JMGKxaEFKJTEAnrvPcLMxh6tWaM5nbp/H8XUBuTZOERBxB+rOSRzIpSlZSgPl5DmJfy+kgVHGtb5BRSSSSynBcyu5SFzPOSZWSiZDOJJDqsZEYXEGuT4AwiChOnVLNK8gnA4TAB2NqeN9ryvr2+CZoIsFQyyFEWzQYZmGZpmKZJjgixN0+wQw7A0RddrGMYZJ3UUqQsOsRTNbPMxTh2pJz6S8/l8O9rzvwENvbqlygrJTgAAAABJRU5ErkJggg==" Reference="tUWEamSLTkOWm2KMa3igsg/G3wElOjxvEiKRSlu2180Kw" Selector="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" Url="[strURL]" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="59cf983241da52276d369bbaa5ecb5f9.jpg" xmlns="">0ojWzMEqxvU6N_jGFEV2igA</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="strURL" />
+    </scg:List>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

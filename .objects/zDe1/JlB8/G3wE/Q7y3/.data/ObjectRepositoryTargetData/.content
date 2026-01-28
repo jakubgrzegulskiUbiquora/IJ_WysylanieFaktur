@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="szbPEiuMj0uuB1IR5_KRXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudokrakow.fakturownia.pl/invoices" CVScreenId="4ce920bc-e228-4128-95b5-891ef5de1804" CvTextArea="210, 191, 170, 21" CvTextArgument="Przychody / Faktura" CvType="Text" DesignTimeRectangle="211, 187, 169, 27" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pad-wrapper' visibleinnertext='Przychody / Faktura' /&gt;" Guid="a6a2baae-2289-4ee7-a770-e99e8498870e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="134fdb37ae0bdd70010a6441ee1bbd1d.png" xmlns="">0sLc1QQxunU6lVcfQ3Vojjg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

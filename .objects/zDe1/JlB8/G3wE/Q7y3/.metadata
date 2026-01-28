@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Przychody  Faktura",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Q7y34cRcfUOo_sbCjvX6ng",
+  "Reference": "tUWEamSLTkOWm2KMa3igsg/Q7y34cRcfUOo_sbCjvX6ng",
+  "ParentRef": "tUWEamSLTkOWm2KMa3igsg/G3wElOjxvEiKRSlu2180Kw",
+  "Created": "2026-01-28T10:55:16.7526533Z",
+  "Updated": "2026-01-28T10:55:16.7526533Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.22.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
