@@ -125,7 +125,7 @@
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="Config" />
       <Variable x:TypeArguments="x:String" Name="strInstancjaFakturowni" />
-      <Variable x:TypeArguments="x:String" Default="C:\Users\Administrator\Downloads\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx" Name="strSelectedFile" />
+      <Variable x:TypeArguments="x:String" Name="strSelectedFile" />
       <Variable x:TypeArguments="x:String" Name="strURL" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
