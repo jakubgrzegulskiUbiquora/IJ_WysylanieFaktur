@@ -10,12 +10,21 @@
         "properties": {
           "TerminPlatnosci": {
             "type": "string",
-            "description": "Domyslnie ustawione na: 14 dni"
+            "description": "Domyslnie ustawione na: 14 dni",
+            "x-default-expression": "\"14\"",
+            "default": "14"
           },
           "DataWystawieniaFaktur": {
             "type": "string",
             "format": "date-time",
-            "description": "Domyslnie ustawione na: DZISIAJ"
+            "description": "Domyslnie ustawione na: DZISIAJ",
+            "x-default-expression": "Today"
+          },
+          "InstancjaFakturowni": {
+            "type": "string"
+          },
+          "SelectedFile": {
+            "type": "string"
           }
         },
         "required": [
