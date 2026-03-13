@@ -177,7 +177,7 @@
           <OutArgument x:TypeArguments="x:String">[strURL]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[Config("URL").ToString.ToLower.Replace("instancja",InstancjaFakturowni).Replace("instance",InstancjaFakturowni).Replace("warszawa",InstancjaFakturowni).Replace("krakow",InstancjaFakturowni)]</InArgument>
+          <InArgument x:TypeArguments="x:String">[Config("URL").ToString.ToLower.Replace("instancja",InstancjaFakturowni)]</InArgument>
         </Assign.Value>
       </Assign>
       <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Uruchom Fakturownię" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1071" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c861c5e6-2e18-4774-b99d-903a53940ed0" Version="V2">
