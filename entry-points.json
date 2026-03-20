@@ -1,0 +1,47 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "entryPoints": [
+    {
+      "filePath": "1_WyborPlikuZFakturami.xaml",
+      "uniqueId": "e09dfc51-7278-415f-8635-b3888e68dbd3",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "TerminPlatnosci": {
+            "type": "string",
+            "description": "Domyslnie ustawione na: 14 dni",
+            "x-default-expression": "\"14\"",
+            "default": "14"
+          },
+          "DataWystawieniaFaktur": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Domyslnie ustawione na: DZISIAJ",
+            "x-default-expression": "Today"
+          },
+          "InstancjaFakturowni": {
+            "type": "string"
+          },
+          "SelectedFile": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "TerminPlatnosci",
+          "DataWystawieniaFaktur"
+        ]
+      }
+    },
+    {
+      "filePath": "2_WystawianieFaktur.xaml",
+      "uniqueId": "e5c0c934-c59a-40aa-8028-14de4c904c23",
+      "type": "process"
+    },
+    {
+      "filePath": "3_Wyslka.xaml",
+      "uniqueId": "97e2abe9-e66f-4222-83a1-bd9d3912b5c6",
+      "type": "process"
+    }
+  ]
+}
