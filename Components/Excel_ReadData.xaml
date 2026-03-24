@@ -134,7 +134,7 @@
       <AssemblyReference>DataService.IJ_WysylanieFaktur</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="727,2623" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="727,3396" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strNIPRegex" />
       <Variable x:TypeArguments="x:String" Name="strColumnKwota" />
@@ -151,7 +151,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Read data" sap:VirtualizedContainerService.HintSize="548,2600" sap2010:WorkflowViewState.IdRef="Sequence_15">
+    <Sequence DisplayName="Read data" sap:VirtualizedContainerService.HintSize="548,3373" sap2010:WorkflowViewState.IdRef="Sequence_15">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtDaneDoFaktur" />
         <Variable x:TypeArguments="x:String" Name="strSheetName" />
@@ -306,13 +306,13 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Assign data and add to queue" sap:VirtualizedContainerService.HintSize="514,1686" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtDaneDoFaktur.AsEnumerable]">
+      <ui:ForEach x:TypeArguments="sd:DataRow" CurrentIndex="{x:Null}" DisplayName="Assign data and add to queue" sap:VirtualizedContainerService.HintSize="514,2459" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtDaneDoFaktur.AsEnumerable]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="currentDataRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,1564" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,2337" sap2010:WorkflowViewState.IdRef="Sequence_16">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strNIP" />
                 <Variable x:TypeArguments="x:String" Name="strKwota" />
@@ -599,9 +599,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <TryCatch DisplayName="Try Add item to queue" sap:VirtualizedContainerService.HintSize="478,380" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Add item to queue" sap:VirtualizedContainerService.HintSize="478,1153" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Try>
-                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,938" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strNazwa" />
                     </Sequence.Variables>
@@ -643,11 +643,11 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <uda:CreateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Create Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CreateEntityRecord`1_1" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .DataWystawienia = in_strDataWystawieniaFaktur,  .Ilosc = strIlosc,  .IloscGrup = strIloscGrup,  .Kontakt = strKontakt,  .Kwota = strKwota,  .Nazwa = strNazwa,  .NazwaUslugi = strNazwaUslugi,  .NIP = strNIP,  .NumerFaktury = strNumerFaktury,  .TerminPlatnosci = in_strTerminPlatnosci,  .URL = in_strURL }]" TimeoutInMs="30000">
+                    <uda:CreateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Create Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,821" sap2010:WorkflowViewState.IdRef="CreateEntityRecord`1_1" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .DataWystawienia = in_strDataWystawieniaFaktur,  .Ilosc = strIlosc,  .IloscGrup = strIloscGrup,  .Kontakt = strKontakt,  .Kwota = strKwota,  .Nazwa = strNazwa,  .NazwaUslugi = strNazwaUslugi,  .NIP = strNIP,  .NumerFaktury = strNumerFaktury,  .Status = IJ_WysylanieFaktur.Status.New,  .TerminPlatnosci = in_strTerminPlatnosci,  .URL = in_strURL }]" TimeoutInMs="30000">
                       <uda:CreateEntityRecord.State>
                         <udam:RecordState>
                           <udam:RecordState.SelectedFields>
-                            <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="12">
+                            <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="13">
                               <udam:DynamicEntityField Id="8a680555-3824-f111-9a49-0022489e60c3" Name="DataWystawienia">
                                 <udam:DynamicEntityField.ArgumentValue>
                                   <InArgument x:TypeArguments="x:String">[in_strDataWystawieniaFaktur]</InArgument>
@@ -698,6 +698,11 @@
                                   <InArgument x:TypeArguments="x:String">[strNumerFaktury]</InArgument>
                                 </udam:DynamicEntityField.ArgumentValue>
                               </udam:DynamicEntityField>
+                              <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
+                                <udam:DynamicEntityField.ArgumentValue>
+                                  <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.New]</InArgument>
+                                </udam:DynamicEntityField.ArgumentValue>
+                              </udam:DynamicEntityField>
                               <udam:DynamicEntityField Id="8c680555-3824-f111-9a49-0022489e60c3" Name="TerminPlatnosci">
                                 <udam:DynamicEntityField.ArgumentValue>
                                   <InArgument x:TypeArguments="x:String">[in_strTerminPlatnosci]</InArgument>
@@ -714,7 +719,7 @@
                       </uda:CreateEntityRecord.State>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
