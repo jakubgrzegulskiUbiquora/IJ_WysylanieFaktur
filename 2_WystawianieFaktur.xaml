@@ -131,12 +131,12 @@
         <av:Point x:Key="ShapeLocation">45,135</av:Point>
         <x:Double x:Key="StateContainerWidth">974</x:Double>
         <x:Double x:Key="StateContainerHeight">722</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">95,160 125,160 125,116.15 164,116.15</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">95,160 125,160 125,104.05 164,104.05</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <State x:Name="__ReferenceID0" sap2010:Annotation.AnnotationText="Get the next transaction to be processed." DisplayName="Get Transaction Data" sap:VirtualizedContainerService.HintSize="229,110" sap2010:WorkflowViewState.IdRef="State_4">
       <State.Entry>
-        <Sequence sap2010:Annotation.AnnotationText="Retrieve a new transaction data to be processed.&#xA;The TransactionNumber variable holds the current transaction number and incrementing this variable makes the framework retrieve the next transaction. If the framework is retrying a failed transaction, this variable is not incremented until the maximum number of retry attempts is reached." DisplayName="Retrieve Data" sap:VirtualizedContainerService.HintSize="522,1483" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <Sequence sap2010:Annotation.AnnotationText="Retrieve a new transaction data to be processed.&#xA;The TransactionNumber variable holds the current transaction number and incrementing this variable makes the framework retrieve the next transaction. If the framework is retrying a failed transaction, this variable is not incremented until the maximum number of retry attempts is reached." DisplayName="Retrieve Data" sap:VirtualizedContainerService.HintSize="522,1031" sap2010:WorkflowViewState.IdRef="Sequence_25">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="ShouldStop" />
           </Sequence.Variables>
@@ -148,7 +148,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:ShouldStop DisplayName="Check Stop Signal" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="ShouldStop_2" Result="[ShouldStop]" />
-          <If Condition="[ShouldStop]" DisplayName="Should Stop or Get Next" sap:VirtualizedContainerService.HintSize="488,1206" sap2010:WorkflowViewState.IdRef="If_11">
+          <If Condition="[ShouldStop]" DisplayName="Should Stop or Get Next" sap:VirtualizedContainerService.HintSize="488,754" sap2010:WorkflowViewState.IdRef="If_11">
             <If.Then>
               <Sequence DisplayName="Orchestrator stop requested" sap:VirtualizedContainerService.HintSize="486,25" sap2010:WorkflowViewState.IdRef="Sequence_23">
                 <sap:WorkflowViewStateService.ViewState>
@@ -182,13 +182,13 @@
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,1051" sap2010:WorkflowViewState.IdRef="Sequence_45">
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,599" sap2010:WorkflowViewState.IdRef="Sequence_45">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <TryCatch DisplayName="Try GetTransactionData" sap:VirtualizedContainerService.HintSize="452,991" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                <TryCatch DisplayName="Try GetTransactionData" sap:VirtualizedContainerService.HintSize="452,539" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,37 +196,55 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,400" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                    <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,284" sap2010:WorkflowViewState.IdRef="Sequence_46">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uda:QueryEntityRecords x:TypeArguments="i:IJFaktury" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[EntityRecord]" QueriedEntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" Skip="0" SortAscending="True" SortByField="CreateTime" TimeoutInMs="30000" Top="1">
-                        <uda:QueryEntityRecords.FilterArguments>
-                          <uda:FilterArgument FilterActivityType="{x:Null}">
-                            <uda:FilterArgument.Filter>
-                              <uda:GroupFilter Index="0" Operator="AND">
-                                <uda:GroupFilter.Filters>
-                                  <scg:List x:TypeArguments="uda:SimpleFilter" Capacity="4">
-                                    <uda:SimpleFilter ExpressionValue="{x:Null}" FieldName="Status" FieldType="UiPath.DataService.Core.Models.EntityField" Operator="=" ValueIndex="0" />
-                                  </scg:List>
-                                </uda:GroupFilter.Filters>
-                                <uda:GroupFilter.Groups>
-                                  <scg:List x:TypeArguments="uda:GroupFilter" Capacity="0" />
-                                </uda:GroupFilter.Groups>
-                              </uda:GroupFilter>
-                            </uda:FilterArgument.Filter>
-                          </uda:FilterArgument>
-                        </uda:QueryEntityRecords.FilterArguments>
-                        <uda:QueryEntityRecords.FilterValues>
-                          <scg:List x:TypeArguments="InArgument" Capacity="4">
-                            <InArgument x:TypeArguments="x:String">[Convert.ToDecimal("2").ToString]</InArgument>
-                          </scg:List>
-                        </uda:QueryEntityRecords.FilterValues>
-                      </uda:QueryEntityRecords>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Warn" Message="[&quot;Procesowanie &quot;+EntityRecord(0).NumerFaktury]" />
+                      <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" FolderPath="IpponJudo" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="IJ_Faktury" TransactionItem="[TransactionItem]" />
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,400" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uda:QueryEntityRecords x:TypeArguments="i:IJFaktury" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[EntityRecord]" QueriedEntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" Skip="0" SortAscending="True" SortByField="CreateTime" TimeoutInMs="30000" Top="1">
+                              <uda:QueryEntityRecords.FilterArguments>
+                                <uda:FilterArgument FilterActivityType="{x:Null}">
+                                  <uda:FilterArgument.Filter>
+                                    <uda:GroupFilter Index="0" Operator="AND">
+                                      <uda:GroupFilter.Filters>
+                                        <scg:List x:TypeArguments="uda:SimpleFilter" Capacity="4">
+                                          <uda:SimpleFilter ExpressionValue="{x:Null}" FieldName="Status" FieldType="UiPath.DataService.Core.Models.EntityField" Operator="=" ValueIndex="0" />
+                                        </scg:List>
+                                      </uda:GroupFilter.Filters>
+                                      <uda:GroupFilter.Groups>
+                                        <scg:List x:TypeArguments="uda:GroupFilter" Capacity="0" />
+                                      </uda:GroupFilter.Groups>
+                                    </uda:GroupFilter>
+                                  </uda:FilterArgument.Filter>
+                                </uda:FilterArgument>
+                              </uda:QueryEntityRecords.FilterArguments>
+                              <uda:QueryEntityRecords.FilterValues>
+                                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                  <InArgument x:TypeArguments="x:String">[Convert.ToDecimal("2").ToString]</InArgument>
+                                </scg:List>
+                              </uda:QueryEntityRecords.FilterValues>
+                            </uda:QueryEntityRecords>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Warn" Message="[&quot;Procesowanie &quot;+EntityRecord(0).NumerFaktury]" />
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
@@ -251,10 +269,10 @@
                           <ui:LogMessage DisplayName="Log message  (Get transaction data error)" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Fatal" Message="[Config(&quot;LogMessage_GetTransactionDataError&quot;).ToString+TransactionNumber.ToString+&quot;. &quot;+Exception.Message+&quot; at Source: &quot;+Exception.Source]" />
                           <Assign DisplayName="End Process (Could not get new transaction)" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_23">
                             <Assign.To>
-                              <OutArgument x:TypeArguments="scg:IList(i:IJFaktury)">[EntityRecord]</OutArgument>
+                              <OutArgument x:TypeArguments="ui:QueueItem">[TransactionItem]</OutArgument>
                             </Assign.To>
                             <Assign.Value>
-                              <InArgument x:TypeArguments="scg:IList(i:IJFaktury)">[Nothing]</InArgument>
+                              <InArgument x:TypeArguments="ui:QueueItem">[Nothing]</InArgument>
                             </Assign.Value>
                           </Assign>
                         </Sequence>
@@ -262,10 +280,10 @@
                     </Catch>
                   </TryCatch.Catches>
                   <TryCatch.Finally>
-                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_44">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -298,9 +316,9 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Process a single transaction. &#xA;The result of the processing can be: 1) Success, 2) Business Exception, 3) System Exception. &#xA;In the case of a system exception, the transaction can be automatically retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="789,4298" sap2010:WorkflowViewState.IdRef="State_3">
+            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="Process a single transaction. &#xA;The result of the processing can be: 1) Success, 2) Business Exception, 3) System Exception. &#xA;In the case of a system exception, the transaction can be automatically retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="604,3962" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
-                <TryCatch DisplayName="Try to process transaction" sap:VirtualizedContainerService.HintSize="743,3816" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                <TryCatch DisplayName="Try to process transaction" sap:VirtualizedContainerService.HintSize="558,3480" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -308,14 +326,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="Process the current TransactionItem" sap:VirtualizedContainerService.HintSize="741,1560" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <Sequence DisplayName="Process the current TransactionItem" sap:VirtualizedContainerService.HintSize="556,1110" sap2010:WorkflowViewState.IdRef="Sequence_28">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Assign BusinessException" sap:VirtualizedContainerService.HintSize="707,57" sap2010:WorkflowViewState.IdRef="Assign_25">
+                      <Assign DisplayName="Assign BusinessException" sap:VirtualizedContainerService.HintSize="522,57" sap2010:WorkflowViewState.IdRef="Assign_25">
                         <Assign.To>
                           <OutArgument x:TypeArguments="ui:BusinessRuleException">[BusinessException]</OutArgument>
                         </Assign.To>
@@ -329,33 +347,68 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="707,175" sap2010:WorkflowViewState.IdRef="Assign_30">
+                      <Assign sap:VirtualizedContainerService.HintSize="522,175" sap2010:WorkflowViewState.IdRef="Assign_30">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[strURL]</OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">[EntityRecord(0).URL]</InArgument>
+                          <InArgument x:TypeArguments="x:String">[TransactionItem.SpecificContent("URL").ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Edge_InteractWithFakturownia - Invoke Workflow File (Components\Edge_InteractWithFakturownia.xaml)" sap:VirtualizedContainerService.HintSize="707,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="Components\Edge_Fakturownia_Faktura.xaml">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,228" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Edge_InteractWithFakturownia - Invoke Workflow File (Components\Edge_InteractWithFakturownia.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="Components\Edge_Fakturownia_Faktura.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="strURL">[strURL]</InArgument>
+                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_strURL">[strURL]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_strNIP">[EntityRecord(0).NIP]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strSortingColumn">[Config("ColumnSortBy").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strNumer">[EntityRecord(0).NumerFaktury]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strDataWystawienia">[EntityRecord(0).DataWystawienia]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strNazwaUslugi">[EntityRecord(0).NazwaUslugi]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strCenaNetto">[EntityRecord(0).Kwota]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strTerminPlatnosci">[EntityRecord(0).TerminPlatnosci]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strEmail">[EntityRecord(0).Kontakt]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strIlosc">[EntityRecord(0).Ilosc]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strIloscGrup">[EntityRecord(0).IloscGrup]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="strIloscOsob">[EntityRecord(0).IloscOsob]</InArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Edge_InteractWithFakturownia - Invoke Workflow File (Components\Edge_InteractWithFakturownia.xaml)" sap:VirtualizedContainerService.HintSize="522,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="Components\Edge_Fakturownia_Faktura.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="strURL">[strURL]</InArgument>
                           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_strURL">[strURL]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_strNIP">[EntityRecord(0).NIP]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strSortingColumn">[Config("ColumnSortBy").ToString]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strNumer">[EntityRecord(0).NumerFaktury]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strDataWystawienia">[EntityRecord(0).DataWystawienia]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strNazwaUslugi">[EntityRecord(0).NazwaUslugi]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strCenaNetto">[EntityRecord(0).Kwota]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strTerminPlatnosci">[EntityRecord(0).TerminPlatnosci]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strEmail">[EntityRecord(0).Kontakt]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strIlosc">[EntityRecord(0).Ilosc]</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="strIloscGrup">[EntityRecord(0).IloscGrup]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_strNIP">[TransactionItem.SpecificContent("NIP").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strSortingColumn">[TransactionItem.SpecificContent("ColumnSortBy").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strNumer">[TransactionItem.SpecificContent("NumerFaktury").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strDataWystawienia">[TransactionItem.SpecificContent("DataWystawienia").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strNazwaUslugi">[TransactionItem.SpecificContent("NazwaUslugi").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strCenaNetto">[TransactionItem.SpecificContent("Kwota").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strTerminPlatnosci">[TransactionItem.SpecificContent("TerminPlatnosci").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strEmail">[TransactionItem.SpecificContent("Kontakt").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strIlosc">[TransactionItem.SpecificContent("Ilosc").ToString]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="strIloscGrup">[TransactionItem.SpecificContent("IloscGrup").ToString]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="strIloscOsob">[EntityRecord(0).IloscOsob]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <TryCatch DisplayName="Try Catch Set Transaction Status (Success)" sap:VirtualizedContainerService.HintSize="707,1091" sap2010:WorkflowViewState.IdRef="TryCatch_10">
+                      <TryCatch DisplayName="Try Catch Set Transaction Status (Success)" sap:VirtualizedContainerService.HintSize="522,584" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -363,42 +416,35 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <TryCatch.Try>
-                          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,728" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,394" sap2010:WorkflowViewState.IdRef="Sequence_50">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uda:UpdateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Set Status - Update Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,258" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .Status = IJ_WysylanieFaktur.Status.Successful, .Id = EntityRecord(0).Id }]" IsInRecordView="False" RecordId="[EntityRecord(0).Id]" TimeoutInMs="30000">
-                              <uda:UpdateEntityRecord.State>
-                                <udam:RecordState>
-                                  <udam:RecordState.SelectedFields>
-                                    <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="1">
-                                      <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
-                                        <udam:DynamicEntityField.ArgumentValue>
-                                          <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.Successful]</InArgument>
-                                        </udam:DynamicEntityField.ArgumentValue>
-                                      </udam:DynamicEntityField>
-                                    </scg:List>
-                                  </udam:RecordState.SelectedFields>
-                                </udam:RecordState>
-                              </uda:UpdateEntityRecord.State>
-                            </uda:UpdateEntityRecord>
-                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                               <ui:CommentOut.Body>
-                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,309" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="IpponJudo" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="IJ_Wysylka" Reference="[TransactionItem.SpecificContent(&quot;NumerFaktury&quot;).ToString]">
-                                    <ui:AddQueueItem.ItemInformation>
-                                      <InArgument x:TypeArguments="x:String" x:Key="NumerFaktury">[TransactionItem.SpecificContent("NumerFaktury").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="Kontakt">[TransactionItem.SpecificContent("Kontakt").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="URL">[TransactionItem.SpecificContent("URL").ToString]</InArgument>
-                                    </ui:AddQueueItem.ItemInformation>
-                                  </ui:AddQueueItem>
+                                  <uda:UpdateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Set Status - Update Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .Status = IJ_WysylanieFaktur.Status.Successful, .Id = EntityRecord(0).Id }]" IsInRecordView="False" RecordId="[EntityRecord(0).Id]" TimeoutInMs="30000">
+                                    <uda:UpdateEntityRecord.State>
+                                      <udam:RecordState>
+                                        <udam:RecordState.SelectedFields>
+                                          <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="1">
+                                            <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
+                                              <udam:DynamicEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.Successful]</InArgument>
+                                              </udam:DynamicEntityField.ArgumentValue>
+                                            </udam:DynamicEntityField>
+                                          </scg:List>
+                                        </udam:RecordState.SelectedFields>
+                                      </udam:RecordState>
+                                    </uda:UpdateEntityRecord.State>
+                                  </uda:UpdateEntityRecord>
                                 </Sequence>
                               </ui:CommentOut.Body>
                               <sap:WorkflowViewStateService.ViewState>
@@ -408,36 +454,60 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <uda:CreateEntityRecord x:TypeArguments="i:IJWysylka" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Create Entity Record" EntityId="420e5924-a026-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,353" sap2010:WorkflowViewState.IdRef="CreateEntityRecord`1_1" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJWysylka() With {  .Kontakt = EntityRecord(0).Kontakt,  .NumerFaktury = EntityRecord(0).NumerFaktury,  .Status = IJ_WysylanieFaktur.Status.New,  .URL = EntityRecord(0).URL }]" TimeoutInMs="30000">
-                              <uda:CreateEntityRecord.State>
-                                <udam:RecordState>
-                                  <udam:RecordState.SelectedFields>
-                                    <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="4">
-                                      <udam:DynamicEntityField Id="4d0e5924-a026-f111-9a49-0022489e60c3" Name="Kontakt">
-                                        <udam:DynamicEntityField.ArgumentValue>
-                                          <InArgument x:TypeArguments="x:String">[EntityRecord(0).Kontakt]</InArgument>
-                                        </udam:DynamicEntityField.ArgumentValue>
-                                      </udam:DynamicEntityField>
-                                      <udam:DynamicEntityField Id="4c0e5924-a026-f111-9a49-0022489e60c3" Name="NumerFaktury">
-                                        <udam:DynamicEntityField.ArgumentValue>
-                                          <InArgument x:TypeArguments="x:String">[EntityRecord(0).NumerFaktury]</InArgument>
-                                        </udam:DynamicEntityField.ArgumentValue>
-                                      </udam:DynamicEntityField>
-                                      <udam:DynamicEntityField Id="5f290722-a526-f111-9a49-0022489e60c3" Name="Status">
-                                        <udam:DynamicEntityField.ArgumentValue>
-                                          <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.New]</InArgument>
-                                        </udam:DynamicEntityField.ArgumentValue>
-                                      </udam:DynamicEntityField>
-                                      <udam:DynamicEntityField Id="4e0e5924-a026-f111-9a49-0022489e60c3" Name="URL">
-                                        <udam:DynamicEntityField.ArgumentValue>
-                                          <InArgument x:TypeArguments="x:String">[EntityRecord(0).URL]</InArgument>
-                                        </udam:DynamicEntityField.ArgumentValue>
-                                      </udam:DynamicEntityField>
-                                    </scg:List>
-                                  </udam:RecordState.SelectedFields>
-                                </udam:RecordState>
-                              </uda:CreateEntityRecord.State>
-                            </uda:CreateEntityRecord>
+                            <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="IpponJudo" sap:VirtualizedContainerService.HintSize="416,229" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="IJ_Wysylka" Reference="[TransactionItem.SpecificContent(&quot;NumerFaktury&quot;).ToString]">
+                              <ui:AddQueueItem.ItemInformation>
+                                <InArgument x:TypeArguments="x:String" x:Key="NumerFaktury">[TransactionItem.SpecificContent("NumerFaktury").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="Kontakt">[TransactionItem.SpecificContent("Kontakt").ToString]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="URL">[TransactionItem.SpecificContent("URL").ToString]</InArgument>
+                              </ui:AddQueueItem.ItemInformation>
+                            </ui:AddQueueItem>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uda:CreateEntityRecord x:TypeArguments="i:IJWysylka" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Create Entity Record" EntityId="420e5924-a026-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,353" sap2010:WorkflowViewState.IdRef="CreateEntityRecord`1_1" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJWysylka() With {  .Kontakt = EntityRecord(0).Kontakt,  .NumerFaktury = EntityRecord(0).NumerFaktury,  .Status = IJ_WysylanieFaktur.Status.New,  .URL = EntityRecord(0).URL }]" TimeoutInMs="30000">
+                                    <uda:CreateEntityRecord.State>
+                                      <udam:RecordState>
+                                        <udam:RecordState.SelectedFields>
+                                          <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="4">
+                                            <udam:DynamicEntityField Id="4d0e5924-a026-f111-9a49-0022489e60c3" Name="Kontakt">
+                                              <udam:DynamicEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="x:String">[EntityRecord(0).Kontakt]</InArgument>
+                                              </udam:DynamicEntityField.ArgumentValue>
+                                            </udam:DynamicEntityField>
+                                            <udam:DynamicEntityField Id="4c0e5924-a026-f111-9a49-0022489e60c3" Name="NumerFaktury">
+                                              <udam:DynamicEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="x:String">[EntityRecord(0).NumerFaktury]</InArgument>
+                                              </udam:DynamicEntityField.ArgumentValue>
+                                            </udam:DynamicEntityField>
+                                            <udam:DynamicEntityField Id="5f290722-a526-f111-9a49-0022489e60c3" Name="Status">
+                                              <udam:DynamicEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.New]</InArgument>
+                                              </udam:DynamicEntityField.ArgumentValue>
+                                            </udam:DynamicEntityField>
+                                            <udam:DynamicEntityField Id="4e0e5924-a026-f111-9a49-0022489e60c3" Name="URL">
+                                              <udam:DynamicEntityField.ArgumentValue>
+                                                <InArgument x:TypeArguments="x:String">[EntityRecord(0).URL]</InArgument>
+                                              </udam:DynamicEntityField.ArgumentValue>
+                                            </udam:DynamicEntityField>
+                                          </scg:List>
+                                        </udam:RecordState.SelectedFields>
+                                      </udam:RecordState>
+                                    </uda:CreateEntityRecord.State>
+                                  </uda:CreateEntityRecord>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
                           </Sequence>
                         </TryCatch.Try>
                         <TryCatch.Catches>
@@ -446,16 +516,16 @@
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_55">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:LogMessage DisplayName="Log message (Failed to set transaction status Success)" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Fatal" Message="[&quot;SetTransactionStatus.xaml failed: &quot;+exception.Message+&quot; at Source: &quot;+exception.Source]">
+                                <ui:LogMessage DisplayName="Log message (Failed to set transaction status Success)" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Fatal" Message="[&quot;SetTransactionStatus.xaml failed: &quot;+exception.Message+&quot; at Source: &quot;+exception.Source]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
@@ -465,10 +535,11 @@
                           </Catch>
                         </TryCatch.Catches>
                         <TryCatch.Finally>
-                          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_47">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Sequence>
@@ -488,14 +559,14 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="ui:BusinessRuleException" Name="Exception" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Handle Business Exception" sap:VirtualizedContainerService.HintSize="741,1025" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                        <Sequence DisplayName="Handle Business Exception" sap:VirtualizedContainerService.HintSize="556,1001" sap2010:WorkflowViewState.IdRef="Sequence_29">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Set transaction status to BusinessRuleException" sap:VirtualizedContainerService.HintSize="707,175" sap2010:WorkflowViewState.IdRef="Assign_26">
+                          <Assign DisplayName="Set transaction status to BusinessRuleException" sap:VirtualizedContainerService.HintSize="522,175" sap2010:WorkflowViewState.IdRef="Assign_26">
                             <Assign.To>
                               <OutArgument x:TypeArguments="ui:BusinessRuleException">[BusinessException]</OutArgument>
                             </Assign.To>
@@ -503,7 +574,7 @@
                               <InArgument x:TypeArguments="ui:BusinessRuleException">[Exception]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <TryCatch DisplayName="Try Catch Set Transaction Status (BRE)" sap:VirtualizedContainerService.HintSize="707,790" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+                          <TryCatch DisplayName="Try Catch Set Transaction Status (BRE)" sap:VirtualizedContainerService.HintSize="522,766" sap2010:WorkflowViewState.IdRef="TryCatch_11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -511,27 +582,58 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,309" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,285" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uda:UpdateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_2" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .Status = IJ_WysylanieFaktur.Status.Failed, .Id = EntityRecord(0).Id }]" IsInRecordView="False" RecordId="[EntityRecord(0).Id]" TimeoutInMs="30000">
-                                  <uda:UpdateEntityRecord.State>
-                                    <udam:RecordState>
-                                      <udam:RecordState.SelectedFields>
-                                        <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="1">
-                                          <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
-                                            <udam:DynamicEntityField.ArgumentValue>
-                                              <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.Failed]</InArgument>
-                                            </udam:DynamicEntityField.ArgumentValue>
-                                          </udam:DynamicEntityField>
-                                        </scg:List>
-                                      </udam:RecordState.SelectedFields>
-                                    </udam:RecordState>
-                                  </uda:UpdateEntityRecord.State>
-                                </uda:UpdateEntityRecord>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SetTransactionStatus - Invoke Workflow File (Framework\SetTransactionStatus.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="Framework\SetTransactionStatus.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="ui:BusinessRuleException" x:Key="in_BusinessException">[BusinessException]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_TransactionField1">[TransactionField1]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_TransactionField2">[TransactionField2]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_TransactionID">[TransactionID]</InArgument>
+                                    <InArgument x:TypeArguments="s:Exception" x:Key="in_SystemException">[SystemException]</InArgument>
+                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                                    <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="io_RetryNumber">[RetryNumber]</InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="io_TransactionNumber">[TransactionNumber]</InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="io_ConsecutiveSystemExceptions">[ConsecutiveSystemExceptions]</InOutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,309" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uda:UpdateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_2" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .Status = IJ_WysylanieFaktur.Status.Failed, .Id = EntityRecord(0).Id }]" IsInRecordView="False" RecordId="[EntityRecord(0).Id]" TimeoutInMs="30000">
+                                        <uda:UpdateEntityRecord.State>
+                                          <udam:RecordState>
+                                            <udam:RecordState.SelectedFields>
+                                              <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="1">
+                                                <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
+                                                  <udam:DynamicEntityField.ArgumentValue>
+                                                    <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.Failed]</InArgument>
+                                                  </udam:DynamicEntityField.ArgumentValue>
+                                                </udam:DynamicEntityField>
+                                              </scg:List>
+                                            </udam:RecordState.SelectedFields>
+                                          </udam:RecordState>
+                                        </uda:UpdateEntityRecord.State>
+                                      </uda:UpdateEntityRecord>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:CommentOut>
                               </Sequence>
                             </TryCatch.Try>
                             <TryCatch.Catches>
@@ -584,14 +686,14 @@
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="s:Exception" Name="Exception" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Handle System Exception" sap:VirtualizedContainerService.HintSize="486,1025" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                        <Sequence DisplayName="Handle System Exception" sap:VirtualizedContainerService.HintSize="556,1163" sap2010:WorkflowViewState.IdRef="Sequence_30">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Set transaction status to SystemException" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_27">
+                          <Assign DisplayName="Set transaction status to SystemException" sap:VirtualizedContainerService.HintSize="522,175" sap2010:WorkflowViewState.IdRef="Assign_27">
                             <Assign.To>
                               <OutArgument x:TypeArguments="s:Exception">[SystemException]</OutArgument>
                             </Assign.To>
@@ -599,7 +701,7 @@
                               <InArgument x:TypeArguments="s:Exception">[Exception]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <TryCatch DisplayName="Try Catch SetTransactionStatus (SE)" sap:VirtualizedContainerService.HintSize="452,790" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                          <TryCatch DisplayName="Try Catch SetTransactionStatus (SE)" sap:VirtualizedContainerService.HintSize="522,928" sap2010:WorkflowViewState.IdRef="TryCatch_12">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -607,34 +709,59 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <TryCatch.Try>
-                              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,309" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                              <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,447" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uda:UpdateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,249" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_3" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .Status = IJ_WysylanieFaktur.Status.Failed, .Id = EntityRecord(0).Id }]" IsInRecordView="False" RecordId="[EntityRecord(0).Id]" TimeoutInMs="30000">
-                                  <uda:UpdateEntityRecord.State>
-                                    <udam:RecordState>
-                                      <udam:RecordState.SelectedFields>
-                                        <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="1">
-                                          <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
-                                            <udam:DynamicEntityField.ArgumentValue>
-                                              <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.Failed]</InArgument>
-                                            </udam:DynamicEntityField.ArgumentValue>
-                                          </udam:DynamicEntityField>
-                                        </scg:List>
-                                      </udam:RecordState.SelectedFields>
-                                    </udam:RecordState>
-                                  </uda:UpdateEntityRecord.State>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </uda:UpdateEntityRecord>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SetTransactionStatus - Invoke Workflow File (Framework\SetTransactionStatus.xaml)" sap:VirtualizedContainerService.HintSize="486,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_33" UnSafe="False" WorkflowFileName="Framework\SetTransactionStatus.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="ui:BusinessRuleException" x:Key="in_BusinessException">[BusinessException]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_TransactionField1">[TransactionField1]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_TransactionField2">[TransactionField2]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_TransactionID">[TransactionID]</InArgument>
+                                    <InArgument x:TypeArguments="s:Exception" x:Key="in_SystemException">[SystemException]</InArgument>
+                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+                                    <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[TransactionItem]</InArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="io_RetryNumber">[RetryNumber]</InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="io_TransactionNumber">[TransactionNumber]</InOutArgument>
+                                    <InOutArgument x:TypeArguments="x:Int32" x:Key="io_ConsecutiveSystemExceptions">[ConsecutiveSystemExceptions]</InOutArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,210" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                                  <ui:CommentOut.Body>
+                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uda:UpdateEntityRecord x:TypeArguments="i:IJFaktury" InputEntity="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="009a3e2b-1a21-f111-9a49-0022489e60c3" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_3" InputEntityInFieldView="[new IJ_WysylanieFaktur.IJFaktury() With {  .Status = IJ_WysylanieFaktur.Status.Failed, .Id = EntityRecord(0).Id }]" IsInRecordView="False" RecordId="[EntityRecord(0).Id]" TimeoutInMs="30000">
+                                        <uda:UpdateEntityRecord.State>
+                                          <udam:RecordState>
+                                            <udam:RecordState.SelectedFields>
+                                              <scg:List x:TypeArguments="udam:DynamicEntityField" Capacity="1">
+                                                <udam:DynamicEntityField Id="7ad8c7a8-5c24-f111-9a49-0022489e60c3" Name="Status">
+                                                  <udam:DynamicEntityField.ArgumentValue>
+                                                    <InArgument x:TypeArguments="i:Status">[IJ_WysylanieFaktur.Status.Failed]</InArgument>
+                                                  </udam:DynamicEntityField.ArgumentValue>
+                                                </udam:DynamicEntityField>
+                                              </scg:List>
+                                            </udam:RecordState.SelectedFields>
+                                          </udam:RecordState>
+                                        </uda:UpdateEntityRecord.State>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uda:UpdateEntityRecord>
+                                    </Sequence>
+                                  </ui:CommentOut.Body>
+                                </ui:CommentOut>
                               </Sequence>
                             </TryCatch.Try>
                             <TryCatch.Catches>
@@ -643,14 +770,14 @@
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,226" sap2010:WorkflowViewState.IdRef="Sequence_56">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:LogMessage DisplayName="Log message (Failed to set transaction status SE)" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Fatal" Message="[&quot;SetTransactionStatus.xaml failed: &quot;+exception.Message+&quot; at Source: &quot;+exception.Source]" />
+                                    <ui:LogMessage DisplayName="Log message (Failed to set transaction status SE)" sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Fatal" Message="[&quot;SetTransactionStatus.xaml failed: &quot;+exception.Message+&quot; at Source: &quot;+exception.Source]" />
                                   </Sequence>
                                 </ActivityAction>
                               </Catch>
@@ -1108,6 +1235,7 @@
       <Variable x:TypeArguments="x:Int32" sap2010:Annotation.AnnotationText="Used to control the number of consecutive system exceptions." Default="0" Name="ConsecutiveSystemExceptions" />
       <Variable x:TypeArguments="x:String" Name="strURL" />
       <Variable x:TypeArguments="scg:IList(i:IJFaktury)" Name="EntityRecord" />
+      <Variable x:TypeArguments="ui:QueueItem" Name="TransactionItem" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
