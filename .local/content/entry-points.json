@@ -2,6 +2,79 @@
   "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
   "entryPoints": [
     {
+      "filePath": "0_Refresh.xaml",
+      "uniqueId": "7ee5ac1a-d5cf-4b81-a251-1bc1d04e598c",
+      "type": "process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "QueueName": {
+            "type": "string",
+            "x-default-expression": "\"IJ_Faktury\"",
+            "default": "IJ_Faktury"
+          },
+          "OrchFolder": {
+            "type": "string",
+            "x-default-expression": "\"IpponJudo\"",
+            "default": "IpponJudo"
+          }
+        },
+        "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "Faktury": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "DataWystawienia": {
+                  "type": "string"
+                },
+                "Ilosc": {
+                  "type": "string"
+                },
+                "IloscGrup": {
+                  "type": "string"
+                },
+                "IloscOsob": {
+                  "type": "string"
+                },
+                "Kontakt": {
+                  "type": "string"
+                },
+                "Kwota": {
+                  "type": "string"
+                },
+                "Nazwa": {
+                  "type": "string"
+                },
+                "NazwaUslugi": {
+                  "type": "string"
+                },
+                "NIP": {
+                  "type": "string"
+                },
+                "NumerFaktury": {
+                  "type": "string"
+                },
+                "Reference": {
+                  "type": "string"
+                },
+                "TerminPlatnosci": {
+                  "type": "string"
+                },
+                "URL": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
       "filePath": "1_WyborPlikuZFakturami.xaml",
       "uniqueId": "e09dfc51-7278-415f-8635-b3888e68dbd3",
       "type": "process",

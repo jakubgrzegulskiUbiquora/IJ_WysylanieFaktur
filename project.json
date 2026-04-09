@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.182.0",
-  "projectVersion": "3.0.0",
+  "projectVersion": "3.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -69,6 +69,12 @@
     {
       "filePath": "3_Wyslka.xaml",
       "uniqueId": "97e2abe9-e66f-4222-83a1-bd9d3912b5c6",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "0_Refresh.xaml",
+      "uniqueId": "7ee5ac1a-d5cf-4b81-a251-1bc1d04e598c",
       "input": [],
       "output": []
     }

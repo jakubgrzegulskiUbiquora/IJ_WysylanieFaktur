@@ -60,6 +60,8 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPathImportedTypes.TypeName.Bundle</x:String>
+      <x:String>UiPathImportedTypes.QIDTO.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -121,6 +123,8 @@
       <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPathImportedTypes.fxC5eNRqMC1XBU2i2ixrw82</AssemblyReference>
+      <AssemblyReference>UiPathImportedTypes.0DAB63VMZyC1rqCpw38BVyA</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Dispatcher" sap:VirtualizedContainerService.HintSize="727,2159" sap2010:WorkflowViewState.IdRef="Sequence_1">

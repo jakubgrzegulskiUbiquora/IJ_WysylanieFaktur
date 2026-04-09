@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "IJ_Wysylka_QueueSchema",
+  "additionalProperties": { "type": "string" },
+  "required": [
+    "NumerFaktury"
+  ],
+  "properties": {
+	"Reference": {
+      "$id": "#/properties/Reference",
+      "type": "string",
+      "title": "Reference",
+      "default": ""
+	},
+	"NumerFaktury": {
+      "$id": "#/properties/NumerFaktury",
+      "type": "string",
+      "title": "NumerFaktury",
+      "default": ""
+	},
+	"Kontakt": {
+      "$id": "#/properties/Kontakt",
+      "type": "string",
+      "title": "Kontakt",
+      "default": ""
+	},
+	"URL": {
+      "$id": "#/properties/URL",
+      "type": "string",
+      "title": "URL",
+      "default": ""
+	}	
+  }
+}

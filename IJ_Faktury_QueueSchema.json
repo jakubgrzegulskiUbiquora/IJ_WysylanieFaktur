@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "IJ_Faktury_QueueSchema",
+  "additionalProperties": { "type": "string" },
+  "required": [
+    "NumerFaktury","NIP"
+  ],
+  "properties": {
+	"Reference": {
+      "$id": "#/properties/Reference",
+      "type": "string",
+      "title": "Reference",
+      "default": ""
+	},
+	"NumerFaktury": {
+      "$id": "#/properties/NumerFaktury",
+      "type": "string",
+      "title": "NumerFaktury",
+      "default": ""
+	},
+	"NIP": {
+      "$id": "#/properties/NIP",
+      "type": "string",
+      "title": "NIP",
+      "default": ""
+	},
+	"Kwota": {
+      "$id": "#/properties/Kwota",
+      "type": "string",
+      "title": "Kwota",
+      "default": ""
+	},
+	"Kontakt": {
+      "$id": "#/properties/Kontakt",
+      "type": "string",
+      "title": "Kontakt",
+      "default": ""
+	},
+	"DataWystawienia": {
+      "$id": "#/properties/DataWystawienia",
+      "type": "string",
+      "title": "DataWystawienia",
+      "default": ""
+	},
+	"Nazwa": {
+      "$id": "#/properties/Nazwa",
+      "type": "string",
+      "title": "Nazwa",
+      "default": ""
+	},
+	"TerminPlatnosci": {
+      "$id": "#/properties/TerminPlatnosci",
+      "type": "string",
+      "title": "TerminPlatnosci",
+      "default": ""
+	},
+	"NazwaUslugi": {
+      "$id": "#/properties/NazwaUslugi",
+      "type": "string",
+      "title": "NazwaUslugi",
+      "default": ""
+	},
+	"Ilosc": {
+      "$id": "#/properties/Ilosc",
+      "type": "string",
+      "title": "Ilosc",
+      "default": ""
+	},
+	"IloscOsob": {
+      "$id": "#/properties/IloscOsob",
+      "type": "string",
+      "title": "IloscOsob",
+      "default": ""
+	},
+	"IloscGrup": {
+      "$id": "#/properties/IloscGrup",
+      "type": "string",
+      "title": "IloscGrup",
+      "default": ""
+	},
+	"URL": {
+      "$id": "#/properties/URL",
+      "type": "string",
+      "title": "URL",
+      "default": ""
+	}	
+  }
+}
