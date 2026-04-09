@@ -94,10 +94,14 @@
             "x-default-expression": "Today"
           },
           "InstancjaFakturowni": {
-            "type": "string"
+            "type": "string",
+            "x-default-expression": "\"Krakow\"",
+            "default": "Krakow"
           },
           "SelectedFile": {
-            "type": "string"
+            "type": "string",
+            "x-default-expression": "\"C:\\Users\\Administrator\\Downloads\\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx\"",
+            "default": "C:\\Users\\Administrator\\Downloads\\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx"
           }
         },
         "required": [

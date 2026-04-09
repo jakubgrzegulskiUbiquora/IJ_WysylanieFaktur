@@ -43,6 +43,7 @@
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -104,9 +105,10 @@
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="0_Refresh" sap:VirtualizedContainerService.HintSize="727,540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="0_Refresh" sap:VirtualizedContainerService.HintSize="727,1065" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="qiFaktury" />
     </Sequence.Variables>
@@ -115,7 +117,10 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Orch Folder: &quot;+OrchFolder]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Queue Name: &quot;+QueueName]" />
     <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="[OrchFolder]" sap:VirtualizedContainerService.HintSize="450,176" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New, InProgress, Failed, Successful, Abandoned" QueueName="[QueueName]" Result="[qiFaktury]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Number of items: &quot;+qiFaktury.Count.ToString]" />
     <Assign sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(uqb:QIDTO)">[Faktury]</OutArgument>
