@@ -18,11 +18,11 @@
       "DataSourceItems": null
     },
     {
-      "Name": "QueueName",
-      "DisplayName": "QueueName",
+      "Name": "OrchFolder",
+      "DisplayName": "OrchFolder",
       "Category": null,
       "Tooltip": null,
-      "Placeholder": "IJ_Faktury",
+      "Placeholder": "IpponJudo",
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,
@@ -30,11 +30,11 @@
       "DataSourceItems": null
     },
     {
-      "Name": "OrchFolder",
-      "DisplayName": "OrchFolder",
+      "Name": "Wysylka",
+      "DisplayName": "Wysylka",
       "Category": null,
       "Tooltip": null,
-      "Placeholder": "IpponJudo",
+      "Placeholder": null,
       "Widget": null,
       "IsRequired": false,
       "IsPrincipal": true,

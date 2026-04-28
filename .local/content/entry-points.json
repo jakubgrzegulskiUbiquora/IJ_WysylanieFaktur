@@ -8,11 +8,6 @@
       "input": {
         "type": "object",
         "properties": {
-          "QueueName": {
-            "type": "string",
-            "x-default-expression": "\"IJ_Faktury\"",
-            "default": "IJ_Faktury"
-          },
           "OrchFolder": {
             "type": "string",
             "x-default-expression": "\"IpponJudo\"",
@@ -25,6 +20,53 @@
         "type": "object",
         "properties": {
           "Faktury": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "DataWystawienia": {
+                  "type": "string"
+                },
+                "Ilosc": {
+                  "type": "string"
+                },
+                "IloscGrup": {
+                  "type": "string"
+                },
+                "IloscOsob": {
+                  "type": "string"
+                },
+                "Kontakt": {
+                  "type": "string"
+                },
+                "Kwota": {
+                  "type": "string"
+                },
+                "Nazwa": {
+                  "type": "string"
+                },
+                "NazwaUslugi": {
+                  "type": "string"
+                },
+                "NIP": {
+                  "type": "string"
+                },
+                "NumerFaktury": {
+                  "type": "string"
+                },
+                "Reference": {
+                  "type": "string"
+                },
+                "TerminPlatnosci": {
+                  "type": "string"
+                },
+                "URL": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Wysylka": {
             "type": "array",
             "items": {
               "type": "object",
@@ -83,25 +125,18 @@
         "properties": {
           "TerminPlatnosci": {
             "type": "string",
-            "description": "Domyslnie ustawione na: 14 dni",
-            "x-default-expression": "\"14\"",
-            "default": "14"
+            "description": "Domyslnie ustawione na: 14 dni"
           },
           "DataWystawieniaFaktur": {
             "type": "string",
             "format": "date-time",
-            "description": "Domyslnie ustawione na: DZISIAJ",
-            "x-default-expression": "Today"
+            "description": "Domyslnie ustawione na: DZISIAJ"
           },
           "InstancjaFakturowni": {
-            "type": "string",
-            "x-default-expression": "\"Krakow\"",
-            "default": "Krakow"
+            "type": "string"
           },
           "SelectedFile": {
-            "type": "string",
-            "x-default-expression": "\"C:\\Users\\Administrator\\Downloads\\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx\"",
-            "default": "C:\\Users\\Administrator\\Downloads\\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx"
+            "type": "string"
           }
         },
         "required": [

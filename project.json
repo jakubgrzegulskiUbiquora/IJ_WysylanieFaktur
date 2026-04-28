@@ -6,14 +6,14 @@
   "dependencies": {
     "UiPath.Excel.Activities": "[3.3.1]",
     "UiPath.MicrosoftOffice365.Activities": "[3.5.10]",
-    "UiPath.System.Activities": "[25.10.4]",
-    "UiPath.UIAutomation.Activities": "[25.10.22]"
+    "UiPath.System.Activities.Runtime": "[25.10.4]",
+    "UiPath.UIAutomation.Activities": "[25.10.31]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.182.0",
-  "projectVersion": "3.0.3",
+  "projectVersion": "3.0.7",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -30,7 +30,8 @@
     "readyForPiP": false,
     "startsInPiP": false,
     "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "pipType": "ChildSession",
+    "robotVersion": "26.0.191"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -41,23 +42,58 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "5390cf75-ca98-49ca-a6bc-c03b1795b8f5",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Components\\T_UpdateNazwaUslugi.xaml"
-      }
-    ],
+    "fileInfoCollection": [],
     "saveToCloud": false
+  },
+  "arguments": {
+    "input": [],
+    "output": []
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "1_WyborPlikuZFakturami.xaml",
       "uniqueId": "e09dfc51-7278-415f-8635-b3888e68dbd3",
-      "input": [],
+      "input": [
+        {
+          "name": "TerminPlatnosci",
+          "displayName": "TerminPlatnosci",
+          "tooltip": "Domyslnie ustawione na: 14 dni",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": true,
+          "hasDefault": true,
+          "isExpression": false,
+          "defaultValue": "14"
+        },
+        {
+          "name": "DataWystawieniaFaktur",
+          "displayName": "DataWystawieniaFaktur",
+          "tooltip": "Domyslnie ustawione na: DZISIAJ",
+          "type": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": true,
+          "hasDefault": true,
+          "isExpression": true,
+          "defaultValue": "Today"
+        },
+        {
+          "name": "InstancjaFakturowni",
+          "displayName": "InstancjaFakturowni",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true,
+          "isExpression": false,
+          "defaultValue": "Krakow"
+        },
+        {
+          "name": "SelectedFile",
+          "displayName": "SelectedFile",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true,
+          "isExpression": false,
+          "defaultValue": "C:\\Users\\Administrator\\Downloads\\EWIDENCJA I ROZLICZENIE - GRUDZIEŃ 2025.xlsx"
+        }
+      ],
       "output": []
     },
     {
@@ -75,8 +111,29 @@
     {
       "filePath": "0_Refresh.xaml",
       "uniqueId": "7ee5ac1a-d5cf-4b81-a251-1bc1d04e598c",
-      "input": [],
-      "output": []
+      "input": [
+        {
+          "name": "OrchFolder",
+          "displayName": "OrchFolder",
+          "type": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": true,
+          "isExpression": false,
+          "defaultValue": "IpponJudo"
+        }
+      ],
+      "output": [
+        {
+          "name": "Faktury",
+          "displayName": "Faktury",
+          "type": "System.Collections.Generic.List`1[[UiPathImportedTypes.QIDTO.Bundle.QIDTO, UiPathImportedTypes.0DAB63VMZyC1rqCpw38BVyA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+        },
+        {
+          "name": "Wysylka",
+          "displayName": "Wysylka",
+          "type": "System.Collections.Generic.List`1[[UiPathImportedTypes.QIDTO.Bundle.QIDTO, UiPathImportedTypes.0DAB63VMZyC1rqCpw38BVyA, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+        }
+      ]
     }
   ],
   "isTemplate": false,
