@@ -1,0 +1,13 @@
+﻿{
+  "Name": "funnyjudokrakow.fakturo…",
+  "Type": "Element",
+  "Id": "prhZYyOBvUWCI-o5r-OCRQ",
+  "Reference": "tUWEamSLTkOWm2KMa3igsg/prhZYyOBvUWCI-o5r-OCRQ",
+  "ParentRef": "tUWEamSLTkOWm2KMa3igsg/arlgBJ0jaUmic-UuRTrNHA",
+  "Created": "2026-04-28T11:20:44.1447405Z",
+  "Updated": "2026-04-28T11:20:44.1447405Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

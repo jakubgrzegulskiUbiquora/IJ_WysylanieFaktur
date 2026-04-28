@@ -150,8 +150,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;DataWystawieniaFaktur: &quot;+DataWystawieniaFaktur.ToString(&quot;yyyy-MM-dd&quot;)]" />
-    <Sequence DisplayName="Request Inputs" sap:VirtualizedContainerService.HintSize="450,840" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Request Inputs" sap:VirtualizedContainerService.HintSize="450,1015" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:CurrentJobInfo" Name="jiCurrentJob" />
       </Sequence.Variables>
@@ -161,6 +160,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;DataWystawieniaFaktur: &quot;+DataWystawieniaFaktur.ToString(&quot;yyyy-MM-dd&quot;)]" />
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[InstancjaFakturowni]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">

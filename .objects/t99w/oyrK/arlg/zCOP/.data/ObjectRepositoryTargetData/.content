@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IEyWdOpigkC1gB1OGblmeg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/new" CVScreenId="275641db-af94-47ed-aae1-71f14a8c7ef9" CvElementArea="789, 241, 43, 35" CvTextArea="799, 251, 22, 14" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="791, 243, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='funnyjudokrakow.fakturownia.pl says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="c9a56e61-46c3-479d-8702-2dd4e8ab7986" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Fakturownia.pl - program do fakturowania and 4*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="4cea95e8f3f02a57fc71cbd2f0cf918f.jpg" xmlns="">0ZdMBdWU6HUSDMN_Tc1-crw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

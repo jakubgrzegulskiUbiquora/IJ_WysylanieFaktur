@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Wyślij",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "MhteAHBePk6hetGvBIOR7g",
+  "Reference": "tUWEamSLTkOWm2KMa3igsg/MhteAHBePk6hetGvBIOR7g",
+  "ParentRef": "tUWEamSLTkOWm2KMa3igsg/arlgBJ0jaUmic-UuRTrNHA",
+  "Created": "2026-04-28T10:38:33.019279Z",
+  "Updated": "2026-04-28T10:38:33.019279Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

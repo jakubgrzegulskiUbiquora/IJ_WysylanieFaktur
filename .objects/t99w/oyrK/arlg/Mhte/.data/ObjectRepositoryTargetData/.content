@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qq0GlhCM60adYQTuwVifcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="a1b6cf50-d8b1-4167-ba4a-9cf77ef50d64" CvElementArea="889, 317, 65, 37" CvTextArea="901, 326, 40, 20" CvTextArgument="Wyślij" CvType="Button" DesignTimeRectangle="891, 319, 62, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Wyślij' parentid='ksef_send_modal' tag='BUTTON' type='button' /&gt;" Guid="522ee150-9a08-42f8-8ab3-7a9ad997f805" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="6139eb0e7d8a0fb94e76aeb9d98b28fa.jpg" xmlns="">0kJ9FvGevLUWzdfyjSrO3fg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

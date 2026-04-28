@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Wyślij'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "dqZYy5s-OUa1NvJGelMLSA",
+  "Reference": "tUWEamSLTkOWm2KMa3igsg/dqZYy5s-OUa1NvJGelMLSA",
+  "ParentRef": "tUWEamSLTkOWm2KMa3igsg/W9cLZe6OtU-9fdRNPaZv1g",
+  "Created": "2026-04-28T10:46:57.3483958Z",
+  "Updated": "2026-04-28T10:46:57.3483958Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.31.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

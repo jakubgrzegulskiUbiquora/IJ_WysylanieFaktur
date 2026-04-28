@@ -138,7 +138,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="727,3569" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="727,4100" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="dtPreviousInvoices" />
       <Variable x:TypeArguments="x:String" Name="strLastInvoiceNumber" />
@@ -149,20 +149,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge_Interact With Fakturownia" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,3546" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge_Interact With Fakturownia" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,4077" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,3352" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,2761" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,61" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_26">
                   <sap:WorkflowViewStateService.ViewState>
@@ -182,7 +182,7 @@
                         <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl" CVScreenId="d5b7ae13-5edf-400c-bae2-9edefda1c973" ContentHash="ePDyTIa4K0q6-7vKPuJlgQ" CvTextArea="62, 138, 57, 14" CvTextArgument="Przychody" CvType="Text" DesignTimeRectangle="63, 138, 59, 14" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='hidden-sm' parentid='navbar-left' tag='SPAN' aaname='Przychody ' innertext='Przychody ' visibleinnertext='Przychody ' /&gt;" Guid="c6c9e72d-c6de-4643-8b6b-c6054e769f7d" InformativeScreenshot="0ad3a4ba258d7a4e1414eab5ad1231db.png" Reference="_1_2iaZ6XE6053rSNUu7dg/L49_Q13tPkS_iIepXsCBiw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='funnyjudowarszawa - Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions Mode="Appears">
                           <uix:VerifyExecutionOptions.Retry>
                             <InArgument x:TypeArguments="x:Boolean" />
                           </uix:VerifyExecutionOptions.Retry>
@@ -206,7 +206,7 @@
                         <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl" CVScreenId="4b5f8a6a-7b43-4e98-81e5-e9f080c29593" ContentHash="oT4BOSLCK0ehxy8RFsnUUQ" DesignTimeRectangle="49, 200, 158, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                 Faktury ' parentid='navbar-left' tag='A' innertext='                 Faktury ' parentclass='dropdown-menu' visibleinnertext='Faktury' /&gt;" Guid="22ee943f-79a2-4577-bfa7-e2177902396f" InformativeScreenshot="168527c89deaca282f96f7a51d253058.png" Reference="_1_2iaZ6XE6053rSNUu7dg/7tIv4xBUTkmCk8WPJLw8mQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions Mode="Appears">
                           <uix:VerifyExecutionOptions.Retry>
                             <InArgument x:TypeArguments="x:Boolean" />
                           </uix:VerifyExecutionOptions.Retry>
@@ -235,14 +235,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence DisplayName="Find previous invoice" sap:VirtualizedContainerService.HintSize="520,778" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="Find previous invoice" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Szukane słowo lub numer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[in_strNIP]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Szukane słowo lub numer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[in_strNIP]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="253c9867-1db7-4371-859c-44eb395548ed" ContentHash="lPgrqCAiQ0SdJ1dpOb-_tA" CvElementArea="30, 259, 146, 32" CvType="InputBox" DesignTimeRectangle="31, 260, 144, 30" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-query' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control search' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e519278c-f89e-4c3e-8575-bf2977b4cd87" InformativeScreenshot="12757b9dc359649267f51242668bc1dc.png" IsResponsive="True" Reference="tUWEamSLTkOWm2KMa3igsg/s58iJB9jokuSk1RU3v5Z4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                     <uix:TargetAnchorable.Anchors>
@@ -253,7 +253,7 @@
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
                 <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions ExpectedText="[Nothing]" Mode="Appears">
                     <uix:VerifyExecutionTypeIntoOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -269,7 +269,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <TryCatch DisplayName="Try Click 'Search'" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Click 'Search'" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -294,7 +294,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions Mode="Appears">
                           <uix:VerifyExecutionOptions.Retry>
                             <InArgument x:TypeArguments="x:Boolean" />
                           </uix:VerifyExecutionOptions.Retry>
@@ -343,7 +343,7 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtPreviousInvoices]" DisplayName="Extract Previous Invoices" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0 Url' ReferenceIdx='1' Name='Column-0 Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NUMER ▼' ReferenceIdx='2' Name='NUMER ▼'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NUMER ▼ Url' ReferenceIdx='3' Name='NUMER ▼ Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ NETTO' ReferenceIdx='4' Name='WARTOŚĆ NETTO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ NETTO Url' ReferenceIdx='5' Name='WARTOŚĆ NETTO Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ BRUTTO' ReferenceIdx='6' Name='WARTOŚĆ BRUTTO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ BRUTTO Url' ReferenceIdx='7' Name='WARTOŚĆ BRUTTO Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KLIENT' ReferenceIdx='8' Name='KLIENT'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KLIENT Url' ReferenceIdx='9' Name='KLIENT Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DATA WYSTAWIENIA' ReferenceIdx='10' Name='DATA WYSTAWIENIA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DATA WYSTAWIENIA Url' ReferenceIdx='11' Name='DATA WYSTAWIENIA Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DATA PŁATNOŚCI' ReferenceIdx='12' Name='DATA PŁATNOŚCI'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='PRODUKT/USŁUGA' ReferenceIdx='13' Name='PRODUKT/USŁUGA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='PRODUKT/USŁUGA Url' ReferenceIdx='14' Name='PRODUKT/USŁUGA Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='STATUS ?' ReferenceIdx='15' Name='STATUS ?'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='STATUS ? Url' ReferenceIdx='16' Name='STATUS ? Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9' ReferenceIdx='17' Name='Column-9'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9 Url' ReferenceIdx='18' Name='Column-9 Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' name2='Column-0 Url' attr2='href' /&gt;&lt;column name='NUMER ▼' attr='fulltext' name2='NUMER ▼ Url' attr2='href' /&gt;&lt;column name='WARTOŚĆ NETTO' attr='fulltext' name2='WARTOŚĆ NETTO Url' attr2='href' /&gt;&lt;column name='WARTOŚĆ BRUTTO' attr='fulltext' name2='WARTOŚĆ BRUTTO Url' attr2='href' /&gt;&lt;column name='KLIENT' attr='fulltext' name2='KLIENT Url' attr2='href' /&gt;&lt;column name='DATA WYSTAWIENIA' attr='fulltext' name2='DATA WYSTAWIENIA Url' attr2='href' /&gt;&lt;column name='DATA PŁATNOŚCI' attr='fulltext' /&gt;&lt;column name='PRODUKT/USŁUGA' attr='fulltext' name2='PRODUKT/USŁUGA Url' attr2='href' /&gt;&lt;column name='STATUS ?' attr='fulltext' name2='STATUS ? Url' attr2='href' /&gt;&lt;column name='Column-9' attr='fulltext' name2='Column-9 Url' attr2='href' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,147" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtPreviousInvoices]" DisplayName="Extract Previous Invoices" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0 Url' ReferenceIdx='1' Name='Column-0 Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NUMER ▼' ReferenceIdx='2' Name='NUMER ▼'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NUMER ▼ Url' ReferenceIdx='3' Name='NUMER ▼ Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ NETTO' ReferenceIdx='4' Name='WARTOŚĆ NETTO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ NETTO Url' ReferenceIdx='5' Name='WARTOŚĆ NETTO Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ BRUTTO' ReferenceIdx='6' Name='WARTOŚĆ BRUTTO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WARTOŚĆ BRUTTO Url' ReferenceIdx='7' Name='WARTOŚĆ BRUTTO Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KLIENT' ReferenceIdx='8' Name='KLIENT'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='KLIENT Url' ReferenceIdx='9' Name='KLIENT Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DATA WYSTAWIENIA' ReferenceIdx='10' Name='DATA WYSTAWIENIA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DATA WYSTAWIENIA Url' ReferenceIdx='11' Name='DATA WYSTAWIENIA Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DATA PŁATNOŚCI' ReferenceIdx='12' Name='DATA PŁATNOŚCI'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='PRODUKT/USŁUGA' ReferenceIdx='13' Name='PRODUKT/USŁUGA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='PRODUKT/USŁUGA Url' ReferenceIdx='14' Name='PRODUKT/USŁUGA Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='STATUS ?' ReferenceIdx='15' Name='STATUS ?'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='STATUS ? Url' ReferenceIdx='16' Name='STATUS ? Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9' ReferenceIdx='17' Name='Column-9'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9 Url' ReferenceIdx='18' Name='Column-9 Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' name2='Column-0 Url' attr2='href' /&gt;&lt;column name='NUMER ▼' attr='fulltext' name2='NUMER ▼ Url' attr2='href' /&gt;&lt;column name='WARTOŚĆ NETTO' attr='fulltext' name2='WARTOŚĆ NETTO Url' attr2='href' /&gt;&lt;column name='WARTOŚĆ BRUTTO' attr='fulltext' name2='WARTOŚĆ BRUTTO Url' attr2='href' /&gt;&lt;column name='KLIENT' attr='fulltext' name2='KLIENT Url' attr2='href' /&gt;&lt;column name='DATA WYSTAWIENIA' attr='fulltext' name2='DATA WYSTAWIENIA Url' attr2='href' /&gt;&lt;column name='DATA PŁATNOŚCI' attr='fulltext' /&gt;&lt;column name='PRODUKT/USŁUGA' attr='fulltext' name2='PRODUKT/USŁUGA Url' attr2='href' /&gt;&lt;column name='STATUS ?' attr='fulltext' name2='STATUS ? Url' attr2='href' /&gt;&lt;column name='Column-9' attr='fulltext' name2='Column-9 Url' attr2='href' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
                 <uix:NExtractData.Target>
                   <uix:TargetAnchorable BrowserURL="https://funnyjudowarszawa.fakturownia.pl/invoices?attachments=&amp;send_pdf=&amp;order=number.desc&amp;income=&amp;form_action=&amp;sending_overdues=&amp;page=&amp;query=7231563706&amp;kinds%5B%5D=vat&amp;period=last_12_months&amp;search_date_type=issue_date&amp;department_id=&amp;payment_type=&amp;currency=&amp;user_id=&amp;buyer_company=&amp;min_price_net=&amp;max_price_net=&amp;procedure_designations=" DesignTimeRectangle="211, 233, 1123, 204" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="3859fc85-2cdc-4529-9cec-78dd590a787a" InformativeScreenshot="e4b7965140693782eced1b82a39e3206.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='funnyjudowarszawa - Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NExtractData.Target>
@@ -354,7 +354,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NExtractData>
-              <ui:ForEach x:TypeArguments="sd2:DataColumn" CurrentIndex="[index]" DisplayName="Log column names" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtPreviousInvoices.Columns]">
+              <ui:ForEach x:TypeArguments="sd2:DataColumn" CurrentIndex="[index]" DisplayName="Log column names" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dtPreviousInvoices.Columns]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="sd2:DataColumn">
                     <ActivityAction.Argument>
@@ -385,7 +385,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
-              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" OutputDataTable="{x:Null}" ColumnName="[strSortingColumn]" DataTable="[dtPreviousInvoices]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="SortDataTable_1" SortOrder="Descending">
+              <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" OutputDataTable="{x:Null}" ColumnName="[strSortingColumn]" DataTable="[dtPreviousInvoices]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="SortDataTable_1" SortOrder="Descending">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -393,7 +393,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:SortDataTable>
-              <Assign DisplayName="Assign Last Invoice Number" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign DisplayName="Assign Last Invoice Number" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strLastInvoiceNumber]</OutArgument>
                 </Assign.To>
@@ -407,7 +407,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log  Last Invoice Number" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Nr ostatniej faktury: &quot;+ strLastInvoiceNumber]">
+              <ui:LogMessage DisplayName="Log  Last Invoice Number" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Nr ostatniej faktury: &quot;+ strLastInvoiceNumber]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -416,19 +416,19 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
             </Sequence>
-            <Sequence DisplayName="Clone invoice" sap:VirtualizedContainerService.HintSize="520,61" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence DisplayName="Clone invoice" sap:VirtualizedContainerService.HintSize="520,292" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click invoice number" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,270" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click invoice number" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,95" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="8f96be4c-fcb9-40b9-a1d4-8316c609cb7c" ContentHash="uxo_qoKs2UO_wp1v3sqQhw" CvTextArea="238, 302, 97, 12" CvTextArgument="256/12/2025/FUN" CvType="Text" DesignTimeRectangle="240, 282, 86, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='      numer ▼   ' tableCol='2' aaname='{0}*' /&gt;&quot;, strLastInvoiceNumber)]" Guid="09f057c2-0aa8-4bed-9adf-9ce1f5478f1d" InformativeScreenshot="d4dec24743c1b3e40ffa412a85cdff9a.png" Reference="_1_2iaZ6XE6053rSNUu7dg/nupz15-oPkaRzWCRTTH7fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions Mode="Appears">
                     <uix:VerifyExecutionOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionOptions.Retry>
@@ -447,12 +447,12 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Więcej opcji'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Więcej opcji'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/445977219" CVScreenId="4e25543f-32e5-4734-ac13-eb6570a60906" ContentHash="u8DadKeM4UihbZajOoHTBQ" CvTextArea="381, 202, 59, 13" CvTextArgument="Więcej opcji" CvType="Text" DesignTimeRectangle="352, 189, 107, 38" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='  Więcej opcji' class='dropdown-toggle' parentid='pad-wrapper' tag='A' visibleinnertext='  Więcej opcji' /&gt;" Guid="8ff82b80-2c98-4d01-b2f1-e1ed520c9e2f" InformativeScreenshot="b81ae3c7ea36591ec7a03f8ee6b8c073.png" Reference="_1_2iaZ6XE6053rSNUu7dg/97mv1SWtrEyT58ApOpt7nw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions Mode="Appears">
                     <uix:VerifyExecutionOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionOptions.Retry>
@@ -471,12 +471,12 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wystaw podobną'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wystaw podobną'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/445977219" CVScreenId="49aa4968-f579-4764-be7e-32d946ce631f" ContentHash="vPVfrkzhQEiUoFbWYQraBQ" CvTextArea="393, 238, 102, 16" CvTextArgument="Wystaw podobną" CvType="Text" DesignTimeRectangle="353, 234, 222, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Wystaw podobną' parentid='pad-wrapper' tag='A' visibleinnertext='Wystaw podobną' /&gt;" Guid="d2a06ab0-51a2-431e-a240-791a5badf537" InformativeScreenshot="c010329bb6d102d5c4e6f8c1fcb73623.png" Reference="_1_2iaZ6XE6053rSNUu7dg/B4tJBNbAxkqAbQJVFThFPw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions Mode="Appears">
                     <uix:VerifyExecutionOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionOptions.Retry>
@@ -496,7 +496,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
             </Sequence>
-            <Sequence DisplayName="Fill invoice data" sap:VirtualizedContainerService.HintSize="520,1607" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Fill invoice data" sap:VirtualizedContainerService.HintSize="513,1575" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strMonth" />
               </Sequence.Variables>
@@ -506,7 +506,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="False" DisplayName="Type Into 'Data wystawienia'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strDataWystawienia]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.Single]" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Data wystawienia'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="DebuggerApi" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strDataWystawienia]" Timeout="10" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" CVScreenId="96ef99b4-091c-4d5e-b3de-e7634914d3e4" ContentHash="disFYyWBaEiYD84UMBU9Eg" CvElementArea="493, 203, 188, 37" CvType="InputBox" DesignTimeRectangle="495, 205, 184, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='invoice_issue_date' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control  datepicker f3 hasDatepicker' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Data wystawienia' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="706b35c8-37ce-445a-81cf-529f06975fbb" InformativeScreenshot="5ded8ade7937e0ef64d3bf9d861a8348.png" IsResponsive="True" Reference="_1_2iaZ6XE6053rSNUu7dg/SJlSDWCYkkuSo0LgZu9_fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                     <uix:TargetAnchorable.Anchors>
@@ -523,7 +523,168 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <ui:CommentOut DisplayName="Comment Out - Get data via NIP" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,834" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="452,774" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.Single]" ClipboardMode="Never" DeselectAfter="False" DisplayName="Type Into 'Data wystawienia'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NTypeInto_17" InteractionMode="DebuggerApi" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strDataWystawienia]" Timeout="10" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" CVScreenId="96ef99b4-091c-4d5e-b3de-e7634914d3e4" ContentHash="disFYyWBaEiYD84UMBU9Eg" CvElementArea="493, 203, 188, 37" CvType="InputBox" DesignTimeRectangle="495, 205, 184, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='invoice_issue_date' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control  datepicker f3 hasDatepicker' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Data wystawienia' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="706b35c8-37ce-445a-81cf-529f06975fbb" InformativeScreenshot="5ded8ade7937e0ef64d3bf9d861a8348.png" IsResponsive="True" Reference="_1_2iaZ6XE6053rSNUu7dg/SJlSDWCYkkuSo0LgZu9_fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="96ef99b4-091c-4d5e-b3de-e7634914d3e4" CvTextArea="494, 189, 100, 14" CvTextArgument="Data wystawienia" CvType="Text" DesignTimeRectangle="495, 188, 99, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data wystawienia' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='form_main' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='LABEL' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Data wystawienia' /&gt;" Guid="17a78b7c-327f-4291-a6bb-010666bccb08" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,411" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NCheckState DisplayName="Check App State 'funnyjudokrakow.fakturo…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Timeout="10" Version="V5">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/new" CVScreenId="275641db-af94-47ed-aae1-71f14a8c7ef9" ContentHash="IEyWdOpigkC1gB1OGblmeg" CvElementArea="789, 241, 43, 35" CvTextArea="799, 251, 22, 14" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="791, 243, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='funnyjudokrakow.fakturownia.pl says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="c9a56e61-46c3-479d-8702-2dd4e8ab7986" InformativeScreenshot="4cea95e8f3f02a57fc71cbd2f0cf918f.jpg" Reference="tUWEamSLTkOWm2KMa3igsg/zCOPjlyzc0O5wXIVov366Q" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Fakturownia.pl - program do fakturowania and 4*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/new" ContentHash="je1AqTGjFkaRubO-nUrgnA" DesignTimeRectangle="467, 85, 448, 206" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='*.fakturownia.pl says' role='dialog' /&gt;" Guid="1f2d7a74-a6b7-4be3-8eee-7293b31f90a5" InformativeScreenshot="182ccd43acd71c011761ec990770b10c.jpg" Reference="tUWEamSLTkOWm2KMa3igsg/prhZYyOBvUWCI-o5r-OCRQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Fakturownia.pl - program do fakturowania and 4*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                </uix:NCheckState.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NCheckState>
+                              <uix:NCheckState DisplayName="Check App State 'funnyjudokrakow.fakturo…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Timeout="10" Version="V5">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/new" CVScreenId="275641db-af94-47ed-aae1-71f14a8c7ef9" ContentHash="IEyWdOpigkC1gB1OGblmeg" CvElementArea="789, 241, 43, 35" CvTextArea="799, 251, 22, 14" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="791, 243, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='funnyjudokrakow.fakturownia.pl says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="c9a56e61-46c3-479d-8702-2dd4e8ab7986" InformativeScreenshot="4cea95e8f3f02a57fc71cbd2f0cf918f.jpg" Reference="tUWEamSLTkOWm2KMa3igsg/zCOPjlyzc0O5wXIVov366Q" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Fakturownia.pl - program do fakturowania and 4*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/new" ContentHash="je1AqTGjFkaRubO-nUrgnA" DesignTimeRectangle="467, 85, 448, 206" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='*.fakturownia.pl says' role='dialog' /&gt;" Guid="1f2d7a74-a6b7-4be3-8eee-7293b31f90a5" InformativeScreenshot="182ccd43acd71c011761ec990770b10c.jpg" Reference="tUWEamSLTkOWm2KMa3igsg/prhZYyOBvUWCI-o5r-OCRQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Fakturownia.pl - program do fakturowania and 4*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                                </uix:NCheckState.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NCheckState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="False" DisplayName="Type Into 'Data wystawienia'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="NTypeInto_16" InteractionMode="DebuggerApi" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strDataWystawienia]" Version="V5">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" CVScreenId="96ef99b4-091c-4d5e-b3de-e7634914d3e4" ContentHash="disFYyWBaEiYD84UMBU9Eg" CvElementArea="493, 203, 188, 37" CvType="InputBox" DesignTimeRectangle="495, 205, 184, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='invoice_issue_date' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control  datepicker f3 hasDatepicker' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Data wystawienia' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="706b35c8-37ce-445a-81cf-529f06975fbb" InformativeScreenshot="5ded8ade7937e0ef64d3bf9d861a8348.png" IsResponsive="True" Reference="_1_2iaZ6XE6053rSNUu7dg/SJlSDWCYkkuSo0LgZu9_fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="96ef99b4-091c-4d5e-b3de-e7634914d3e4" CvTextArea="494, 189, 100, 14" CvTextArgument="Data wystawienia" CvType="Text" DesignTimeRectangle="495, 188, 99, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Data wystawienia' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' parentid='form_main' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='LABEL' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Data wystawienia' /&gt;" Guid="17a78b7c-327f-4291-a6bb-010666bccb08" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NTypeInto>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                      <TryCatch.Finally>
+                        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </TryCatch.Finally>
+                    </TryCatch>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out - Get data via NIP" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <sap:WorkflowViewStateService.ViewState>
@@ -543,7 +704,7 @@
                           <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" CVScreenId="dccefc66-a484-4433-9ac8-befbb213e0e8" ContentHash="2cl32HFNfEaAxmJOt_toJg" CvElementArea="1034, 278, 228, 26" CvTextArea="1042, 285, 195, 13" CvTextArgument="Zaczytaj dane po NIP, REGON lub KRS" CvType="Button" DesignTimeRectangle="1035, 280, 226, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Zaczytaj dane po NIP, REGON lub KRS ' parentid='buyer_header' tag='A' visibleinnertext='Zaczytaj dane po NIP, REGON lub KRS ' /&gt;" Guid="aa0706b8-9f0a-4cde-a750-de483b6d2b77" InformativeScreenshot="0f5b4a7e52637ba96ef7371788ec75d8.png" Reference="_1_2iaZ6XE6053rSNUu7dg/BEAuRE0F80qOpS-NGO7EZA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                         </uix:NClick.Target>
                         <uix:NClick.VerifyOptions>
-                          <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                          <uix:VerifyExecutionOptions Mode="Appears">
                             <uix:VerifyExecutionOptions.Retry>
                               <InArgument x:TypeArguments="x:Boolean" />
                             </uix:VerifyExecutionOptions.Retry>
@@ -590,7 +751,7 @@
                           </uix:TargetAnchorable>
                         </uix:NTypeInto.Target>
                         <uix:NTypeInto.VerifyOptions>
-                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions ExpectedText="[Nothing]" Mode="Appears">
                             <uix:VerifyExecutionTypeIntoOptions.Retry>
                               <InArgument x:TypeArguments="x:Boolean" />
                             </uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -627,15 +788,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <If Condition="[strNazwaUslugi = &quot;&quot;]" DisplayName="If Nazwa Uslugi is empty" sap:VirtualizedContainerService.HintSize="479,439" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[strNazwaUslugi = &quot;&quot;]" DisplayName="If Nazwa Uslugi is empty" sap:VirtualizedContainerService.HintSize="479,423" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,202" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,194" sap2010:WorkflowViewState.IdRef="Sequence_28">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get Text 'Nazwa Usługi'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,138" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" TextString="[strNazwaUslugi]" Version="V5">
+                    <uix:NGetText DisplayName="Get Text 'Nazwa Usługi'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,134" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" TextString="[strNazwaUslugi]" Version="V5">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/455576646/edit" CVScreenId="a3f07266-1776-45cc-8a27-f5e80d080302" ContentHash="aMsH9Naqx0K2iuv7kwF5qQ" CvElementArea="105, 635, 573, 36" CvType="InputBox" DesignTimeRectangle="107, 637, 572, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='invoice[positions_attributes][0][name]' tag='INPUT' type='text' /&gt;" Guid="e3374f51-7401-409d-ab2d-b927e86f944c" InformativeScreenshot="c0b896cc6b4c39969636934ad894c7a0.png" Reference="tUWEamSLTkOWm2KMa3igsg/qOxNbsUQOEidBd1L3en_nw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                       </uix:NGetText.Target>
@@ -649,7 +810,7 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_29">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -658,7 +819,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,153" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,149" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -672,7 +833,7 @@
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UpdateNazwaUsługi - Invoke Workflow File (Components\UpdateNazwaUsługi.xaml)" sap:VirtualizedContainerService.HintSize="479,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Components\UpdateNazwaUsługi.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="UpdateNazwaUsługi - Invoke Workflow File (Components\UpdateNazwaUsługi.xaml)" sap:VirtualizedContainerService.HintSize="479,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Components\UpdateNazwaUsługi.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InOutArgument x:TypeArguments="x:String" x:Key="strNazwaUslugi">[strNazwaUslugi]</InOutArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="strMonth">[strMonth]</InArgument>
@@ -681,7 +842,7 @@
                   <InArgument x:TypeArguments="x:String" x:Key="strIloscOsob">[strIloscOsob]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Nazwa uslugi'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strNazwaUslugi.Trim]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Nazwa uslugi'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,246" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strNazwaUslugi.Trim]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" CVScreenId="9c42ede8-ee1a-4a3c-8358-abcd884da1d7" ContentHash="lWiIahHMw0CQu-743B6Bxg" CvElementArea="107, 336, 571, 36" CvType="InputBox" DesignTimeRectangle="107, 337, 572, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='invoice[positions_attributes][0][name]' tag='INPUT' type='text' /&gt;" Guid="6b5730aa-7ece-41a3-9c18-585e35dc3bc1" InformativeScreenshot="dd2acea450acaa98f2606ba882e21dfe.png" Reference="_1_2iaZ6XE6053rSNUu7dg/l3appjVqD0WtEaz2CMT5eg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NTypeInto.Target>
@@ -692,12 +853,12 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Ilosc'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strIlosc]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Ilosc'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="NTypeInto_15" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strIlosc]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/455576646/edit" CVScreenId="f199a115-3434-46d4-94a1-edaa61840be7" ContentHash="hyjgjdG9g0unuZ-eJMR3kw" DesignTimeRectangle="689, 437, 87, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='invoice[positions_attributes][0][quantity]' tag='INPUT' type='text' /&gt;" Guid="01228e52-9f6a-4ad4-af81-4e7457b3d143" InformativeScreenshot="7352dd96713b0531e2bbf9c5d29861e2.png" Reference="tUWEamSLTkOWm2KMa3igsg/lMzngXUIU0KzqmvFiW-QAA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                 </uix:NTypeInto.Target>
                 <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions ExpectedText="[Nothing]" Mode="Appears">
                     <uix:VerifyExecutionTypeIntoOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -713,7 +874,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Cena netto'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,61" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strCenaNetto]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DeselectAfter="True" DisplayName="Type Into 'Cena netto'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strCenaNetto]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" ContentHash="T9KEPLcAzE2g0WhF_znfVw" DesignTimeRectangle="883, 337, 87, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='invoice[positions_attributes][0][price_net]' tag='INPUT' type='text' /&gt;" Guid="6400b67b-27ed-4239-a0b0-c87aaee4c014" InformativeScreenshot="6f7ef811eaf36e2073ca976b76ee237e.png" Reference="_1_2iaZ6XE6053rSNUu7dg/41UE2I3dakKV1_meGASKNg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                 </uix:NTypeInto.Target>
@@ -786,7 +947,7 @@
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
                 <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions ExpectedText="[Nothing]" Mode="Appears">
                     <uix:VerifyExecutionTypeIntoOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -832,7 +993,7 @@
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/new" CVScreenId="85524768-655c-44e6-9873-91ebd56c9d9f" ContentHash="PVfVfdZtwUqrPFhlywgXbQ" CvElementArea="84, 547, 63, 32" CvTextArea="95, 555, 41, 16" CvTextArgument="Zapisz" CvType="Button" DesignTimeRectangle="86, 548, 60, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='invoice_submit_button1' tag='A' visibleinnertext='Zapisz' /&gt;" Guid="3c8efbe8-ac7f-4816-a4dd-b8a659d586c5" InformativeScreenshot="4aa5bc51be38725e036780c2cdd6233a.png" Reference="_1_2iaZ6XE6053rSNUu7dg/P6D4wzctN02Lmg2ul-dAxg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                  <uix:VerifyExecutionOptions Mode="Appears">
                     <uix:VerifyExecutionOptions.Retry>
                       <InArgument x:TypeArguments="x:Boolean" />
                     </uix:VerifyExecutionOptions.Retry>
@@ -872,7 +1033,7 @@
                         <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="54f538ea-5fae-4129-a7bf-c05e57b30674" ContentHash="ZTqLZg7DTUKU2jEhtGzJfw" CvTextArea="144, 413, 30, 13" CvTextArgument="Wyślij" CvType="Text" DesignTimeRectangle="139, 413, 34, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='  Wyślij' innertext='  Wyślij' visibleinnertext='  Wyślij' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;span' /&gt;" Guid="2534967f-fd6e-4c19-b72b-ad4f4fc552e3" InformativeScreenshot="cabdeb87d7096688271795ac810e2c84.png" Reference="_1_2iaZ6XE6053rSNUu7dg/c9-QnF5MhU6l6he0Tyt-HA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions Mode="Appears">
                           <uix:VerifyExecutionOptions.Retry>
                             <InArgument x:TypeArguments="x:Boolean" />
                           </uix:VerifyExecutionOptions.Retry>
@@ -902,7 +1063,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                       <uix:NTypeInto.VerifyOptions>
-                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" ExpectedText="[Nothing]" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions ExpectedText="[Nothing]" Mode="Appears">
                           <uix:VerifyExecutionTypeIntoOptions.Retry>
                             <InArgument x:TypeArguments="x:Boolean" />
                           </uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -923,7 +1084,7 @@
                         <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="24f6a277-42cc-481d-9161-4dc65c94a500" ContentHash="KdwZZ4qVbkOhFbR6Xte-gw" CvElementArea="98, 564, 66, 35" CvTextArea="112, 575, 36, 16" CvTextArgument="Wyślij" CvType="Button" DesignTimeRectangle="99, 565, 63, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='commit' tag='INPUT' type='submit' aaname='Wyślij' data-disable-with='Wyślij' value='Wyślij' /&gt;" Guid="b29656ee-87ef-41aa-b22f-8dadf039d8bc" InformativeScreenshot="0MqAF3vJhZk2mTgnjJAZf8g" Reference="_1_2iaZ6XE6053rSNUu7dg/wWvkqAqw6EKF1gVv_TXXDQ" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                       </uix:NClick.Target>
                       <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                        <uix:VerifyExecutionOptions Mode="Appears">
                           <uix:VerifyExecutionOptions.Retry>
                             <InArgument x:TypeArguments="x:Boolean" />
                           </uix:VerifyExecutionOptions.Retry>
@@ -959,7 +1120,7 @@
                 <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452364225" CVScreenId="b74916cb-d668-46a2-b939-4dad9e9c2fc7" ContentHash="pVLRzCg0k0q58wZnBqg4HQ" CvTextArea="66, 202, 35, 11" CvTextArgument="Powrót" CvType="Text" DesignTimeRectangle="58, 202, 43, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='hidden-sm' parentid='pad-wrapper' tag='SPAN' aaname='   Powrót' innertext='   Powrót' visibleinnertext='   Powrót' /&gt;" Guid="8096b5dd-00f5-4d9c-9027-0b31199b8de0" InformativeScreenshot="0tjjnkIgLLEuF7EP9SKJW-Q" Reference="_1_2iaZ6XE6053rSNUu7dg/03GaYu2_BUia7HuFYkcy8A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                <uix:VerifyExecutionOptions Mode="Appears">
                   <uix:VerifyExecutionOptions.Retry>
                     <InArgument x:TypeArguments="x:Boolean" />
                   </uix:VerifyExecutionOptions.Retry>

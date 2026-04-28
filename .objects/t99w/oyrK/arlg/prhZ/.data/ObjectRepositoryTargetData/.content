@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="je1AqTGjFkaRubO-nUrgnA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/new" DesignTimeRectangle="467, 85, 448, 206" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='*.fakturownia.pl says' role='dialog' /&gt;" Guid="1f2d7a74-a6b7-4be3-8eee-7293b31f90a5" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='*Fakturownia.pl - program do fakturowania and 4*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="182ccd43acd71c011761ec990770b10c.jpg" xmlns="">0iav2b5ViRkWRNduOI7tv_g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
