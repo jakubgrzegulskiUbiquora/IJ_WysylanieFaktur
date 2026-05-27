@@ -31,6 +31,12 @@
       "type": "string",
       "title": "URL",
       "default": ""
+	},
+	"DataWystawienia": {
+      "$id": "#/properties/DataWystawienia",
+      "type": "string",
+      "title": "DataWystawienia",
+      "default": ""
 	}	
   }
 }

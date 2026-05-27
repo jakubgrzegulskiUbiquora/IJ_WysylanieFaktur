@@ -40,6 +40,18 @@
       "IsPrincipal": true,
       "ArgumentType": 0,
       "DataSourceItems": null
+    },
+    {
+      "Name": "intQueueDays",
+      "DisplayName": "intQueueDays",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "14",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
     }
   ]
 }

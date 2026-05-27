@@ -12,6 +12,13 @@
             "type": "string",
             "x-default-expression": "\"IpponJudo\"",
             "default": "IpponJudo"
+          },
+          "intQueueDays": {
+            "type": "integer",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "x-default-expression": "14",
+            "default": 14
           }
         },
         "required": []
