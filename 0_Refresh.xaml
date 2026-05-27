@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_0_Refresh" this:_0_Refresh.OrchFolder="IpponJudo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uqb="clr-namespace:UiPathImportedTypes.QIDTO.Bundle;assembly=UiPathImportedTypes.0DAB63VMZyC1rqCpw38BVyA" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_0_Refresh" this:_0_Refresh.OrchFolder="IpponJudo" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uasq="clr-namespace:UiPath.Activities.System.Queues;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uqb="clr-namespace:UiPathImportedTypes.QIDTO.Bundle;assembly=UiPathImportedTypes.0DAB63VMZyC1rqCpw38BVyA" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Wysylka" Type="OutArgument(scg:List(uqb:QIDTO))" />
     <x:Property Name="OrchFolder" Type="InArgument(x:String)" />
@@ -108,7 +108,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="0_Refresh" sap:VirtualizedContainerService.HintSize="727,2360" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="0_Refresh" sap:VirtualizedContainerService.HintSize="727,2982" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="qiFaktury" />
       <Variable x:TypeArguments="x:String" Name="QueueName" />
@@ -119,7 +119,10 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Faktury" sap:VirtualizedContainerService.HintSize="450,1173" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Faktury" sap:VirtualizedContainerService.HintSize="450,1484" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="intQueueDays" />
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -134,10 +137,43 @@
           <InArgument x:TypeArguments="x:String">["IJ_Faktury"]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Orch Folder: &quot;+OrchFolder]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Queue Name: &quot;+QueueName]" />
-      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="[OrchFolder]" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="New, InProgress, Failed, Successful, Abandoned" QueueName="[QueueName]" Result="[qiFaktury]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Number of items: &quot;+qiFaktury.Count.ToString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Orch Folder: &quot;+OrchFolder]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Warn" Message="[&quot;Queue Name: &quot;+QueueName]" />
+      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="[OrchFolder]" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" PropsImportedIntoFilterBuilder="True" QueueItemStates="New, InProgress, Failed, Successful, Abandoned" QueueName="[QueueName]" Result="[qiFaktury]">
+        <ui:GetQueueItems.FilterBuilder>
+          <uasq:QueueItemFilterSettings Index="0" LogicalOperator="And">
+            <uasq:QueueItemFilterSettings.Filters>
+              <scg:List x:TypeArguments="uasq:QueueItemFilterElement" Capacity="0" />
+            </uasq:QueueItemFilterSettings.Filters>
+            <uasq:QueueItemFilterSettings.Groups>
+              <scg:List x:TypeArguments="uasq:QueueItemFilterSettings" Capacity="4">
+                <uasq:QueueItemFilterSettings Index="0" LogicalOperator="And">
+                  <uasq:QueueItemFilterSettings.Filters>
+                    <scg:List x:TypeArguments="uasq:QueueItemFilterElement" Capacity="4">
+                      <uasq:QueueItemStatusFilterElement Criteria="Status" Operator="OneOf">
+                        <uasq:QueueItemStatusFilterElement.Value>
+                          <x:Array Type="ui:QueueItemStates">
+                            <ui:QueueItemStates>New</ui:QueueItemStates>
+                            <ui:QueueItemStates>InProgress</ui:QueueItemStates>
+                            <ui:QueueItemStates>Failed</ui:QueueItemStates>
+                            <ui:QueueItemStates>Successful</ui:QueueItemStates>
+                            <ui:QueueItemStates>Abandoned</ui:QueueItemStates>
+                          </x:Array>
+                        </uasq:QueueItemStatusFilterElement.Value>
+                      </uasq:QueueItemStatusFilterElement>
+                      <uasq:QueueItemDateFilterElementWithArg Criteria="CreationTime" Operator="NewerThan" Value="[Today.AddDays(-intQueueDays)]" />
+                    </scg:List>
+                  </uasq:QueueItemFilterSettings.Filters>
+                  <uasq:QueueItemFilterSettings.Groups>
+                    <scg:List x:TypeArguments="uasq:QueueItemFilterSettings" Capacity="0" />
+                  </uasq:QueueItemFilterSettings.Groups>
+                </uasq:QueueItemFilterSettings>
+              </scg:List>
+            </uasq:QueueItemFilterSettings.Groups>
+          </uasq:QueueItemFilterSettings>
+        </ui:GetQueueItems.FilterBuilder>
+      </ui:GetQueueItems>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;Number of items: &quot;+qiFaktury.Count.ToString]" />
       <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:List(uqb:QIDTO)">[Faktury]</OutArgument>
@@ -168,9 +204,9 @@
 }).ToList()]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Ilosc faktur do wystawienia: &quot;+Faktury.Count.ToString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Ilosc faktur do wystawienia: &quot;+Faktury.Count.ToString]" />
     </Sequence>
-    <Sequence DisplayName="Wysylka" sap:VirtualizedContainerService.HintSize="450,1164" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Wysylka" sap:VirtualizedContainerService.HintSize="450,1475" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,10 +221,10 @@
           <InArgument x:TypeArguments="x:String">["IJ_Wysylka"]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Orch Folder: &quot;+OrchFolder]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Queue Name: &quot;+QueueName]" />
-      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="[OrchFolder]" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="GetQueueItems_2" QueueItemStates="New, InProgress, Failed, Successful, Abandoned" QueueName="[QueueName]" Result="[qiWysylka]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Number of items: &quot;+qiWysylka.Count.ToString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Warn" Message="[&quot;Orch Folder: &quot;+OrchFolder]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Warn" Message="[&quot;Queue Name: &quot;+QueueName]" />
+      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="[OrchFolder]" sap:VirtualizedContainerService.HintSize="416,176" sap2010:WorkflowViewState.IdRef="GetQueueItems_2" QueueItemStates="New, InProgress, Failed, Successful, Abandoned" QueueName="[QueueName]" Result="[qiWysylka]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" Message="[&quot;Number of items: &quot;+qiWysylka.Count.ToString]" />
       <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_5">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:List(uqb:QIDTO)">[Wysylka]</OutArgument>
@@ -210,7 +246,7 @@
 }).ToList()]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,104" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Ilosc faktur do wysłania: &quot;+Wysylka.Count.ToString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Warn" Message="[&quot;Ilosc faktur do wysłania: &quot;+Wysylka.Count.ToString]" />
     </Sequence>
   </Sequence>
 </Activity>

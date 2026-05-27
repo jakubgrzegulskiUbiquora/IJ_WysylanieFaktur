@@ -128,7 +128,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="727,2760" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="727,2313" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="dtPreviousInvoices" />
       <Variable x:TypeArguments="x:String" Name="strLastInvoiceNumber" />
@@ -139,27 +139,27 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge_Interact With Fakturownia" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,2737" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge_Interact With Fakturownia" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,2290" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,2348" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,2096" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Find previous invoice" sap:VirtualizedContainerService.HintSize="520,509" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence DisplayName="Find previous invoice" sap:VirtualizedContainerService.HintSize="520,704" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Szukane słowo lub numer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strNumer]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Szukane słowo lub numer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,298" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="Simulate" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strNumer]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="253c9867-1db7-4371-859c-44eb395548ed" ContentHash="lPgrqCAiQ0SdJ1dpOb-_tA" CvElementArea="30, 259, 146, 32" CvType="InputBox" DesignTimeRectangle="31, 260, 144, 30" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='search-query' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control search' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e519278c-f89e-4c3e-8575-bf2977b4cd87" InformativeScreenshot="12757b9dc359649267f51242668bc1dc.png" IsResponsive="True" Reference="tUWEamSLTkOWm2KMa3igsg/s58iJB9jokuSk1RU3v5Z4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                     <uix:TargetAnchorable.Anchors>
@@ -218,7 +218,7 @@
               </uix:NClick>
               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click invoice number" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="8f96be4c-fcb9-40b9-a1d4-8316c609cb7c" ContentHash="uxo_qoKs2UO_wp1v3sqQhw" CvTextArea="238, 302, 97, 12" CvTextArgument="256/12/2025/FUN" CvType="Text" DesignTimeRectangle="240, 282, 95, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' colName='      numer ▼   ' tableCol='2' aaname='{0}*' /&gt;&quot;, strNumer)]" Guid="09f057c2-0aa8-4bed-9adf-9ce1f5478f1d" InformativeScreenshot="606e56044a0836fed3f6f6d5d5a29d52.png" Reference="_1_2iaZ6XE6053rSNUu7dg/nupz15-oPkaRzWCRTTH7fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                  <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices" CVScreenId="8f96be4c-fcb9-40b9-a1d4-8316c609cb7c" ContentHash="uxo_qoKs2UO_wp1v3sqQhw" CvTextArea="238, 302, 97, 12" CvTextArgument="[string.Format(&quot;{0}&quot;, strNumer)]" CvType="Text" DesignTimeRectangle="240, 361, 88, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='A' colName='      numer ▼   ' tableCol='2' aaname='{0}*' /&gt;&quot;, strNumer)]" Guid="09f057c2-0aa8-4bed-9adf-9ce1f5478f1d" InformativeScreenshot="be26892ed0b5fd11ddd540c434e4fb95.jpg" Reference="_1_2iaZ6XE6053rSNUu7dg/nupz15-oPkaRzWCRTTH7fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
                   <uix:VerifyExecutionOptions Mode="Appears">
@@ -241,46 +241,60 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
             </Sequence>
-            <Sequence DisplayName="Send Invoice" sap:VirtualizedContainerService.HintSize="520,1522" sap2010:WorkflowViewState.IdRef="Sequence_19">
+            <Sequence DisplayName="Send Invoice" sap:VirtualizedContainerService.HintSize="520,1246" sap2010:WorkflowViewState.IdRef="Sequence_19">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'KSeF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="ec2c1828-a1a2-44be-acd0-174df0f002fc" CvTextArea="147, 202, 30, 11" CvTextArgument="KSeF" CvType="Text" DesignTimeRectangle="149, 198, 27, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' KSeF ' innertext=' KSeF ' visibleinnertext='KSeF' class='hidden-sm' /&gt;" Guid="ae067661-cb5d-4401-ac59-4cdc3891da87" InformativeScreenshot="5a4ff3c4b72b7d3e0392b2ecec335506.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                </uix:NClick.Target>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyślij'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="a1b6cf50-d8b1-4167-ba4a-9cf77ef50d64" CvElementArea="889, 317, 65, 37" CvTextArea="901, 326, 40, 20" CvTextArgument="Wyślij" CvType="Button" DesignTimeRectangle="891, 319, 62, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Wyślij' parentid='ksef_send_modal' tag='BUTTON' type='button' /&gt;" Guid="522ee150-9a08-42f8-8ab3-7a9ad997f805" InformativeScreenshot="6139eb0e7d8a0fb94e76aeb9d98b28fa.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions Mode="Appears">
-                    <uix:VerifyExecutionOptions.Target>
-                      <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="8d99b969-964d-4062-9c0f-7fea6ea0a4d6" ContentHash="dK2_HV8X7kWSspt-FfzWEg" CvTextArea="272, 201, 32, 14" CvTextArgument="Wyślij" CvType="Text" DesignTimeRectangle="268, 202, 34, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Wyślij' innertext='*Wyślij' visibleinnertext='*Wyślij' class='hidden-sm' /&gt;" Guid="b891b21c-c41e-428e-a7e2-ff4dbe82c0a1" InformativeScreenshot="c51ae7d664612ee149e9f2442c6b8a03.jpg" Reference="tUWEamSLTkOWm2KMa3igsg/dqZYy5s-OUa1NvJGelMLSA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                    </uix:VerifyExecutionOptions.Target>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyślij' fakture" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="334,234" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,276" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'KSeF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="ec2c1828-a1a2-44be-acd0-174df0f002fc" CvTextArea="147, 202, 30, 11" CvTextArgument="KSeF" CvType="Text" DesignTimeRectangle="149, 198, 27, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' KSeF ' innertext=' KSeF ' visibleinnertext='KSeF' class='hidden-sm' /&gt;" Guid="ae067661-cb5d-4401-ac59-4cdc3891da87" InformativeScreenshot="5a4ff3c4b72b7d3e0392b2ecec335506.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyślij'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Timeout="60" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="a1b6cf50-d8b1-4167-ba4a-9cf77ef50d64" CvElementArea="889, 317, 65, 37" CvTextArea="901, 326, 40, 20" CvTextArgument="Wyślij" CvType="Button" DesignTimeRectangle="891, 319, 62, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Wyślij' parentid='ksef_send_modal' tag='BUTTON' type='button' /&gt;" Guid="522ee150-9a08-42f8-8ab3-7a9ad997f805" InformativeScreenshot="6139eb0e7d8a0fb94e76aeb9d98b28fa.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493092357" CVScreenId="1b7b669a-ee9b-4708-b7c7-bae4d7caaacc" ContentHash="w2cboIMt4EKZpYIrn3YKHA" CvTextArea="136, 202, 95, 13" CvTextArgument="Podgląd KSeF/UPO" CvType="Text" DesignTimeRectangle="131, 198, 99, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Podgląd KSeF/UPO' innertext='*Podgląd KSeF/UPO' visibleinnertext='*Podgląd KSeF/UPO' /&gt;" Guid="7e91947b-cd67-4e73-8820-f6d3a4b9318d" InformativeScreenshot="9c18733fa34cce9bc5d595db718b62c7.jpg" Reference="tUWEamSLTkOWm2KMa3igsg/dqZYy5s-OUa1NvJGelMLSA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.None]" />
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyślij' fakture" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,266" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudokrakow.fakturownia.pl/invoices/493004346" CVScreenId="330c6ada-7ada-4be5-8154-6e11f1f32469" CvTextArea="272, 201, 32, 14" CvTextArgument="Wyślij" CvType="Text" DesignTimeRectangle="268, 202, 34, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*Wyślij' class='hidden-sm' parentid='pad-wrapper' tag='SPAN' /&gt;" Guid="e8185f84-0c5a-4026-986c-2648363fe4d7" InformativeScreenshot="c51ae7d664612ee149e9f2442c6b8a03.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
                 </uix:NClick.Target>
@@ -304,76 +318,6 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,219" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyślij'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="54f538ea-5fae-4129-a7bf-c05e57b30674" ContentHash="ZTqLZg7DTUKU2jEhtGzJfw" CvTextArea="144, 413, 30, 13" CvTextArgument="Wyślij" CvType="Text" DesignTimeRectangle="139, 413, 34, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='  Wyślij' innertext='  Wyślij' visibleinnertext='  Wyślij' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;span' /&gt;" Guid="2534967f-fd6e-4c19-b72b-ad4f4fc552e3" InformativeScreenshot="cabdeb87d7096688271795ac810e2c84.png" Reference="_1_2iaZ6XE6053rSNUu7dg/c9-QnF5MhU6l6he0Tyt-HA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                      </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Target>
-                            <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="7f1491c5-3872-478e-88c2-35cefcf8fc46" ContentHash="YGFAv4G0SkybK-lsubqbsg" CvTextArea="113, 212, 200, 18" CvTextArgument="Wysłanie faktury e-mailem" CvType="Text" DesignTimeRectangle="114, 210, 199, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='send' aaname='Wysłanie faktury e-mailem' innertext='Wysłanie faktury e-mailem' visibleinnertext='Wysłanie faktury e-mailem' /&gt;" Guid="d14ed85f-7af3-4dce-8895-40afa51c7a64" InformativeScreenshot="50f17373c4da582bf7449ab2cf1199af.png" Reference="_1_2iaZ6XE6053rSNUu7dg/roxga4b7YUe3SR6jGO7ilA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                          </uix:VerifyExecutionOptions.Target>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                  </Sequence>
-                </ui:CommentOut.Body>
-              </ui:CommentOut>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,219" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_21">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyślij'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="54f538ea-5fae-4129-a7bf-c05e57b30674" ContentHash="ZTqLZg7DTUKU2jEhtGzJfw" CvTextArea="144, 413, 30, 13" CvTextArgument="Wyślij" CvType="Text" DesignTimeRectangle="139, 413, 34, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='  Wyślij' innertext='  Wyślij' visibleinnertext='  Wyślij' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;span' /&gt;" Guid="2534967f-fd6e-4c19-b72b-ad4f4fc552e3" InformativeScreenshot="cabdeb87d7096688271795ac810e2c84.png" Reference="_1_2iaZ6XE6053rSNUu7dg/c9-QnF5MhU6l6he0Tyt-HA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                      </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Target>
-                            <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="7f1491c5-3872-478e-88c2-35cefcf8fc46" ContentHash="YGFAv4G0SkybK-lsubqbsg" CvTextArea="113, 212, 200, 18" CvTextArgument="Wysłanie faktury e-mailem" CvType="Text" DesignTimeRectangle="114, 210, 199, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='send' aaname='Wysłanie faktury e-mailem' innertext='Wysłanie faktury e-mailem' visibleinnertext='Wysłanie faktury e-mailem' /&gt;" Guid="d14ed85f-7af3-4dce-8895-40afa51c7a64" InformativeScreenshot="50f17373c4da582bf7449ab2cf1199af.png" Reference="_1_2iaZ6XE6053rSNUu7dg/roxga4b7YUe3SR6jGO7ilA" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
-                          </uix:VerifyExecutionOptions.Target>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                  </Sequence>
-                </ui:CommentOut.Body>
-              </ui:CommentOut>
               <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'E-mail klienta'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="HardwareEvents" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Text="[strEmail]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452351038" CVScreenId="7f1491c5-3872-478e-88c2-35cefcf8fc46" ContentHash="EZRaXaL8J02UQiyCsqszuw" CvElementArea="113, 444, 1140, 35" CvType="InputBox" DesignTimeRectangle="114, 445, 1140, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='invoice_email_to' matching:id='fuzzy' fuzzylevel:id='0.0' tag='INPUT' type='text' class='form-control' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='E-mail klienta' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a86bfaa2-2175-4e6b-b775-7f394aa7941d" InformativeScreenshot="0ba71f109065e11541cc7c3742e1c633.png" IsResponsive="True" Reference="_1_2iaZ6XE6053rSNUu7dg/8bdd9PopJ0i5YH6Pzh7y6Q" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='invoice[positions_attributes][0][description]' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
@@ -432,7 +376,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
             </Sequence>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Powrót'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,257" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Powrót'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,86" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="33c2b08c-55a9-46f2-8eda-0c7f2b696f50" Version="V5">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="funnyjudowarszawa.fakturownia.pl/invoices/452364225" CVScreenId="b74916cb-d668-46a2-b939-4dad9e9c2fc7" ContentHash="pVLRzCg0k0q58wZnBqg4HQ" CvTextArea="66, 202, 35, 11" CvTextArgument="Powrót" CvType="Text" DesignTimeRectangle="58, 202, 43, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='hidden-sm' parentid='pad-wrapper' tag='SPAN' aaname='   Powrót' innertext='   Powrót' visibleinnertext='   Powrót' /&gt;" Guid="8096b5dd-00f5-4d9c-9027-0b31199b8de0" InformativeScreenshot="0tjjnkIgLLEuF7EP9SKJW-Q" Reference="_1_2iaZ6XE6053rSNUu7dg/03GaYu2_BUia7HuFYkcy8A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Fakturownia.pl - program do fakturowania' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
               </uix:NClick.Target>
